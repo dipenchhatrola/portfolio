@@ -1,6 +1,6 @@
 import React from "react";
 import ViewMyWorkBtn from "./ViewMyWorkBtn";
-import HeaderImg from "../assets/images/header-img.jpeg"; 
+import HeaderImg from "../assets/images/headerimg.jpeg"; 
 
 function Home() {
     return (
