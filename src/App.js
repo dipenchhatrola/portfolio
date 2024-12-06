@@ -3,7 +3,7 @@ import NavigationaBar from './components/NavigationBar';
 import Home from './components/Home';
 import AboutSection from './components/AboutSection';
 import EducationSection from './components/Education';
-import Skill from './components/Skill';
+import SkillandExperience from './components/SkillandExperience';
 import ProjectSection from './components/ProjectSection';
 import ContactSection from './components/ContactSection';
 import Footer from './components/Footer';
@@ -15,7 +15,7 @@ function App() {
       <Home />
       <AboutSection />
       <EducationSection />
-      <Skill />
+      <SkillandExperience />
       <ProjectSection />
       <ContactSection />
       <Footer />
