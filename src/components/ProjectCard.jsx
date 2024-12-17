@@ -4,7 +4,7 @@ import { Button } from "react-bootstrap";
 
 function ProjectCard(props) {
     return (
-        <div className="col-md-6">
+        <div className="col-md-3">
             <Card className="h-100 shadow">
                 <Card.Img variant="top" src={props.projectImage} />
                 <Card.Body className="p-5">
