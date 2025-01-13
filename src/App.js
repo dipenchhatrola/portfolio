@@ -5,6 +5,7 @@ import AboutSection from './components/AboutSection';
 import EducationSection from './components/Education';
 import SkillandExperience from './components/SkillandExperience';
 import ProjectSection from './components/ProjectSection';
+import Certificate from './components/Certificate';
 import ContactSection from './components/ContactSection';
 import Footer from './components/Footer';
 
@@ -17,6 +18,7 @@ function App() {
       <EducationSection />
       <SkillandExperience />
       <ProjectSection />
+      <Certificate />
       <ContactSection />
       <Footer />
     </div>
