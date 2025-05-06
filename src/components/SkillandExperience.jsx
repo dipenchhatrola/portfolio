@@ -10,7 +10,6 @@ function SkillandExperience() {
                         <h4 className="text-start">React.Js Devloper</h4>
                         <h4 className="text-start">Imbuesoft LLP.</h4>
                         <h4 className="text-start">Jan 2024-April 2024</h4>
-                        <h4 className="text-start">React.Js Devloper</h4>
                     </div>
                     <div className="col-md-6">
                         <h2 className="mb-4">Skill</h2>
