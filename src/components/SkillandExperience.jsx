@@ -9,10 +9,10 @@ function SkillandExperience() {
                         <h2 className="mb-4">Experience</h2>
                         <h4 className="text-start">Software Devloper</h4>
                         <h4 className="text-start">Torridwave Technologies</h4>
-                        <h4 className="mb-2 text-start">Jan 2025-Present</h4>
+                        <h4 className="mb-4 text-start">Jan 2025-Present</h4>
                         <h4 className="text-start">Junior Data Analyst</h4>
                         <h4 className="text-start">I-Tech Infonet Pvt. Ltd.</h4>
-                        <h4 className="mb-2 text-start">Jul 2024-Jan 2025</h4>
+                        <h4 className="mb-4 text-start">Jul 2024-Jan 2025</h4>
                         <h4 className="text-start">React.Js Devloper</h4>
                         <h4 className="text-start">Imbuesoft LLP</h4>
                         <h4 className="text-start">Jan 2024-April 2024</h4>
