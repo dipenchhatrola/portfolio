@@ -7,9 +7,10 @@ function SkillandExperience() {
                 <div className="row">
                     <div className="col-md-6">
                         <h2 className="mb-4">Experience</h2>
-                        <h4 className="text-start"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25"><g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path stroke="#344054" d="M27.083 16.667c-14.791.583-20.833 12.77-20.833 25c0 0 8.083-11.855 20.833-12.5"/><path stroke="#306cfe" d="M27.083 29.167V37.5L42.98 24.52a2.083 2.083 0 0 0 0-3.207L27.083 8.333v8.334"/></g></svg>React.Js Devloper</h4>
+                        <h4 className="text-start">React.Js Devloper</h4>
                         <h4 className="text-start">Imbuesoft LLP.</h4>
                         <h4 className="text-start">Jan 2024-April 2024</h4>
+                        <h4 className="text-start">React.Js Devloper</h4>
                     </div>
                     <div className="col-md-6">
                         <h2 className="mb-4">Skill</h2>
