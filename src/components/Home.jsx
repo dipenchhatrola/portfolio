@@ -10,7 +10,7 @@ function Home() {
                         <h2 className="text-secondary fw-bold lh-1">DIPEN CHHATROLA</h2>
                         <h3 className="text-capitalize text-start text-primary lh-1 mb-3">Web Developer</h3>
                         <div className="d-flex align-items-center justify-content-center justify-content-lg-start pt-5 ml-4">
-                            <a href="/Dipen_Chhatrola.pdf" className="btn btn-primary mr-4" aria-label="Download Dipen Patel's Resume">Download Resume</a>
+                            <a href="/Dipen Chhatrola.pdf" className="btn btn-primary mr-4" aria-label="Download Dipen Patel's Resume">Download Resume</a>
                         </div>
                     </div>
                     <div className="col-md-6 d-flex justify-content-center justify-content-md-end">
