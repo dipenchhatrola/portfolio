@@ -9,7 +9,7 @@ function ProjectCard(props) {
                 <Card.Img variant="top" src={props.projectImage} />
                 <Card.Body className="p-5">
                     <Card.Title className="fw-bold text-uppercase mb-4 fs-3">{props.projectName}</Card.Title>
-                    <Button className="shadow text-capitalize" variant="outline-primary" onClick={props.projectHref}>View Project</Button>
+                    <Button className="shadow text-capitalize" variant="outline-primary" onClick={viewProject}>View Project</Button>
                 </Card.Body>
             </Card>
         </div>
