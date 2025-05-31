@@ -8,10 +8,10 @@ function EducationSection() {
                     <h2 className="mb-4">Education</h2>
                     <div className="col-md-6 d-flex flex-column justify-content-center">
                         <h4 className="text-start text-primary">Atmiya University</h4>
-                        <h5 className="text-start">M.Sc.IT-Master of Science in Information Technology</h5>
+                        <h5 className="text-start">Master of Science in Information Technology</h5>
                         <h6 className="text-start">2022-2024</h6>
                         <h6 className="mb-5 text-start">CGPA-7.08/10</h6>
-                        <h5 className="text-start">B.C.A.-Bachelor of Computer Application</h5>
+                        <h5 className="text-start">Bachelor of Computer Application</h5>
                         <h6 className="text-start">2019-2022</h6>
                         <h6 className="mb-5 text-start">CGPA-6.19/10</h6>                            
                     </div>
