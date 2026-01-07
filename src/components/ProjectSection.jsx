@@ -1,19 +1,39 @@
 import React from "react";
+import { motion } from "framer-motion";
 import ProjectItems from "../assets/ProjectItems";
 import ProjectCard from "./ProjectCard";
 
 function ProjectSection() {
     return (
-        <div className="py-5" id="projects">
+        <motion.div
+            className="py-5" 
+            id="projects"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1 }}
+        >
             <div className="container">
-                <h2 className="mb-4">My projects</h2>
+                <motion.h2 
+                    className="mb-4"
+                    initial={{ y: -50, opacity: 0 }}
+                    animate={{ y: 0, opacity: 1 }}
+                    transition={{ duration: 0.8 }}
+                >
+                    My projects
+                </motion.h2>
                 <div className="row g-4">
                     {
-                        ProjectItems.map((project) => <ProjectCard key={project.id} projectImage={project.projectImg} projectName={project.projectTitle} />)
+                        ProjectItems.map((project, index) => (
+                            <ProjectCard 
+                                key={project.id} 
+                                projectImage={project.projectImg} 
+                                projectName={project.projectTitle}
+                            />
+                        ))
                     }
                 </div>
             </div>
-        </div>
+        </motion.div>
     )
 }
 
