@@ -28,6 +28,7 @@ function ProjectSection() {
                                 key={project.id} 
                                 projectImage={project.projectImg} 
                                 projectName={project.projectTitle}
+                                projectLink={project.link}
                             />
                         ))
                     }
