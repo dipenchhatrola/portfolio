@@ -48,9 +48,8 @@ function AboutSection() {
                             }}
                             transition={{ duration: 0.6 }}
                         >
-                            Hey there! I'm Dipen Chhatrola, I am currently working as a
-                            Software Developer at Torridwave Technologies, where I
-                            contribute to the design, development, and deployment of
+                            Hey there! I'm Dipen Chhatrola, where I contribute to
+                            the design, development, and deployment of
                             scalable software solutions. Passionate about continuous
                             learning, I stay updated with the latest technologies and
                             best practices to bring innovation and efficiency into
@@ -88,5 +87,6 @@ function AboutSection() {
         </motion.div>
     );
 }
+
 
 export default AboutSection;
