@@ -1,4 +1,3 @@
-import { link } from "framer-motion/client";
 import Project1Img from "./images/project1-img.jpg";
 import Project2Img from "./images/project2-img.jpg";
 import Project3Img from "./images/project3-img.jpg";
