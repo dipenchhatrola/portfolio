@@ -33,7 +33,7 @@ function ProjectCard(props) {
                             whileHover={{ scale: 1.1 }}
                             whileTap={{ scale: 0.9 }}
                         >
-                            <Button className="shadow text-capitalize" variant="outline-primary">
+                            <Button className="shadow text-capitalize" variant="outline-primary" href={props.projectLink} disabled={!props.projectLink} target="_blank"> 
                                 View Project
                             </Button>
                         </motion.div>
