@@ -21,7 +21,7 @@ function ContactForm() {
         e.preventDefault();
         
         // Create WhatsApp message with proper formatting
-        const message = `*New Contact Form Submission*%0A%0A*Name:* ${formData.name}%0A*Email:* ${formData.email}%0A*Message:* ${formData.message}`;
+        const message = `*You Got New Inquiry*%0A%0A*Name:* ${formData.name}%0A*Email:* ${formData.email}%0A*Message:* ${formData.message}`;
         
         // Your WhatsApp number
         const phoneNumber = "919979420641";
@@ -99,3 +99,4 @@ function ContactForm() {
 }
 
 export default ContactForm;
+
