@@ -8,22 +8,25 @@ const ProjectItems = [
         id: 1,
         projectImg: Project1Img,
         projectTitle: "Project 1",
-        link : "https://perfume-signaturefragrance.vercel.app/"
+        link : "https://asian-survey.vercel.app/"
     },
     {
         id: 2,
         projectImg: Project2Img,
         projectTitle: "Project 2",
+        link : "https://phitechsolution.vercel.app/"
     },
     {
         id: 3,
         projectImg: Project3Img,
         projectTitle: "Project 3",
+        link : "https://granth-technoforge-frontend.vercel.app/"
     },
     {
         id: 4,
         projectImg: Project4Img,
         projectTitle: "Project 4",
+        link : "https://perfume-signaturefragrance.vercel.app/"
     },
 ]
 
