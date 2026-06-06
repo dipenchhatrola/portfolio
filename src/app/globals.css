@@ -1,0 +1,153 @@
+@import "tailwindcss";
+
+/* ──────────────────────────────────────────────────────────────
+   Design tokens (Tailwind v4 CSS-first config)
+   ────────────────────────────────────────────────────────────── */
+@theme {
+  --color-ink: #050816;
+  --color-ink-2: #0a0f23;
+  --color-slate-deep: #0f172a;
+  --color-violet: #7c3aed;
+  --color-cyan: #22d3ee;
+  --color-blue: #60a5fa;
+  --color-glow: #a78bfa;
+
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-space-grotesk), var(--font-geist-sans), sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, monospace;
+
+  --color-background: #050816;
+  --color-foreground: #e2e8f0;
+}
+
+/* ──────────────────────────────────────────────────────────────
+   Base
+   ────────────────────────────────────────────────────────────── */
+* {
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+html {
+  scroll-behavior: auto; /* Lenis handles smoothing */
+  -webkit-font-smoothing: antialiased;
+  background-color: #050816;
+}
+
+body {
+  background-color: #050816;
+  color: var(--color-foreground);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+  cursor: none;
+}
+
+/* Re-enable native cursor on touch / coarse pointers */
+@media (hover: none), (pointer: coarse) {
+  body {
+    cursor: auto;
+  }
+}
+
+::selection {
+  background: rgba(124, 58, 237, 0.4);
+  color: #ffffff;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #050816;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(#7c3aed, #22d3ee);
+  border-radius: 9999px;
+}
+
+/* Lenis */
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+/* ──────────────────────────────────────────────────────────────
+   Utilities
+   ────────────────────────────────────────────────────────────── */
+@utility text-gradient {
+  background: linear-gradient(120deg, #fff 0%, #a78bfa 45%, #22d3ee 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+@utility text-gradient-violet {
+  background: linear-gradient(120deg, #7c3aed, #60a5fa);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+@utility glass {
+  background: rgba(15, 23, 42, 0.45);
+  backdrop-filter: blur(16px) saturate(140%);
+  -webkit-backdrop-filter: blur(16px) saturate(140%);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+@utility glass-strong {
+  background: rgba(10, 15, 35, 0.7);
+  backdrop-filter: blur(24px) saturate(160%);
+  -webkit-backdrop-filter: blur(24px) saturate(160%);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Animated gradient mesh background blobs */
+@keyframes float-blob {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33% { transform: translate(4%, -6%) scale(1.08); }
+  66% { transform: translate(-5%, 4%) scale(0.95); }
+}
+
+.mesh-blob {
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(80px);
+  opacity: 0.5;
+  animation: float-blob 18s ease-in-out infinite;
+  will-change: transform;
+}
+
+/* Grain / noise overlay */
+.noise {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 60;
+  opacity: 0.035;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
