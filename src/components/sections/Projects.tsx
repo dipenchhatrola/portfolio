@@ -45,20 +45,20 @@ function ProjectChapter({ project, index }: { project: Project; index: number })
             className="absolute -inset-10 blur-3xl"
           />
           {/* mock browser frame */}
-          <div className="absolute inset-5 overflow-hidden rounded-2xl border border-white/10 bg-ink/70 backdrop-blur">
+          <div className="absolute inset-5 flex flex-col overflow-hidden rounded-2xl border border-white/10 bg-ink/70 backdrop-blur">
             <div className="flex items-center gap-1.5 border-b border-white/10 px-4 py-3">
               <span className="h-2.5 w-2.5 rounded-full bg-white/20" />
               <span className="h-2.5 w-2.5 rounded-full bg-white/20" />
               <span className="h-2.5 w-2.5 rounded-full bg-white/20" />
             </div>
-            <div className="flex h-full flex-col items-center justify-center gap-3 p-8 text-center">
+            <div className="flex flex-1 flex-col items-center justify-center gap-3 p-6 pb-24 text-center sm:p-8 sm:pb-28">
               <span
-                className="font-mono text-xs uppercase tracking-[0.25em]"
+                className="font-mono text-[10px] uppercase tracking-[0.25em] sm:text-xs"
                 style={{ color: project.accent }}
               >
                 {project.category} · {project.year}
               </span>
-              <span className="font-display text-3xl font-bold text-white sm:text-4xl">
+              <span className="font-display text-2xl font-bold text-white sm:text-4xl">
                 {project.name}
               </span>
             </div>
