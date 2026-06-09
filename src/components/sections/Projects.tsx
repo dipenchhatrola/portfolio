@@ -1,6 +1,7 @@
 "use client";
 
-import { useRef } from "react";
+import { useRef, useState } from "react";
+import dynamic from "next/dynamic";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
 import { GithubIcon } from "@/components/ui/BrandIcons";
@@ -9,6 +10,11 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 import { portfolio } from "@/lib/portfolio";
 import type { Project } from "@/lib/types";
 import { fadeUp, staggerContainer } from "@/lib/motion";
+
+const LiquidImage = dynamic(
+  () => import("@/components/three/LiquidImage").then((m) => m.LiquidImage),
+  { ssr: false }
+);
 
 const STEPS: { key: keyof Project; label: string }[] = [
   { key: "problem", label: "Problem" },
@@ -20,6 +26,7 @@ const STEPS: { key: keyof Project; label: string }[] = [
 
 function ProjectChapter({ project, index }: { project: Project; index: number }) {
   const ref = useRef<HTMLDivElement>(null);
+  const [hover, setHover] = useState(false);
   const { scrollYProgress } = useScroll({
     target: ref,
     offset: ["start end", "end start"],
@@ -36,36 +43,46 @@ function ProjectChapter({ project, index }: { project: Project; index: number })
           initial="hidden"
           whileInView="show"
           viewport={{ once: true, margin: "-15% 0px" }}
-          className="group relative aspect-[4/3] w-full overflow-hidden rounded-3xl border border-white/10"
-          style={{ background: `linear-gradient(140deg, ${project.accent}22, #0a0f23 60%)` }}
+          onMouseEnter={() => setHover(true)}
+          onMouseLeave={() => setHover(false)}
+          data-cursor
+          className="group relative aspect-[4/3] w-full overflow-hidden rounded-3xl border border-white/10 bg-ink"
         >
+          {/* WebGL liquid-displacement image (mont-fort signature effect) */}
+          <LiquidImage
+            image={project.image}
+            accent={project.accent}
+            hover={hover}
+            className="absolute inset-0"
+          />
+
           <motion.div
             aria-hidden
             style={{ y: glowY, background: `radial-gradient(circle, ${project.accent}55, transparent 60%)` }}
-            className="absolute -inset-10 blur-3xl"
+            className="pointer-events-none absolute -inset-10 mix-blend-screen blur-3xl"
           />
-          {/* mock browser frame */}
-          <div className="absolute inset-5 flex flex-col overflow-hidden rounded-2xl border border-white/10 bg-ink/70 backdrop-blur">
-            <div className="flex items-center gap-1.5 border-b border-white/10 px-4 py-3">
-              <span className="h-2.5 w-2.5 rounded-full bg-white/20" />
-              <span className="h-2.5 w-2.5 rounded-full bg-white/20" />
-              <span className="h-2.5 w-2.5 rounded-full bg-white/20" />
-            </div>
-            <div className="flex flex-1 flex-col items-center justify-center gap-3 p-6 pb-24 text-center sm:p-8 sm:pb-28">
-              <span
-                className="font-mono text-[10px] uppercase tracking-[0.25em] sm:text-xs"
-                style={{ color: project.accent }}
-              >
-                {project.category} · {project.year}
-              </span>
-              <span className="font-display text-2xl font-bold text-white sm:text-4xl">
-                {project.name}
-              </span>
-            </div>
+
+          {/* readability scrim */}
+          <div
+            aria-hidden
+            className="pointer-events-none absolute inset-0 bg-gradient-to-t from-ink/85 via-ink/10 to-ink/30"
+          />
+
+          {/* title + meta */}
+          <div className="pointer-events-none absolute inset-x-6 top-6 flex flex-col gap-1.5">
+            <span
+              className="font-mono text-[10px] uppercase tracking-[0.25em] sm:text-xs"
+              style={{ color: project.accent }}
+            >
+              {project.category} · {project.year}
+            </span>
+            <span className="font-display text-2xl font-bold text-white drop-shadow sm:text-4xl">
+              {project.name}
+            </span>
           </div>
 
           {/* stats overlay */}
-          <div className="absolute inset-x-5 bottom-5 grid grid-cols-3 gap-2">
+          <div className="pointer-events-none absolute inset-x-5 bottom-5 grid grid-cols-3 gap-2">
             {project.stats.map((stat) => (
               <div
                 key={stat.label}

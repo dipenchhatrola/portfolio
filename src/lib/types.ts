@@ -59,6 +59,7 @@ export interface Project {
   link?: string;
   repo?: string;
   accent: string; // hex accent for the chapter
+  image?: string; // optional cover image, e.g. "/projects/erp.jpg" (falls back to accent gradient)
 }
 
 export interface Education {
