@@ -1,5 +1,4 @@
 import { SmoothScrollProvider } from "@/providers/SmoothScrollProvider";
-import { Cursor } from "@/components/layout/Cursor";
 import { Preloader } from "@/components/layout/Preloader";
 import { ScrollProgress } from "@/components/layout/ScrollProgress";
 import { Navbar } from "@/components/layout/Navbar";
@@ -11,7 +10,6 @@ import { Skills } from "@/components/sections/Skills";
 import { Projects } from "@/components/sections/Projects";
 import { Experience } from "@/components/sections/Experience";
 import { Achievements } from "@/components/sections/Achievements";
-import { TechEcosystem } from "@/components/sections/TechEcosystem";
 import { Philosophy } from "@/components/sections/Philosophy";
 import { Contact } from "@/components/sections/Contact";
 
@@ -19,7 +17,6 @@ export default function Home() {
   return (
     <SmoothScrollProvider>
       <Preloader />
-      <Cursor />
       <ScrollProgress />
       <div className="noise" aria-hidden />
       <Navbar />
@@ -31,7 +28,6 @@ export default function Home() {
         <Projects />
         <Experience />
         <Achievements />
-        <TechEcosystem />
         <Philosophy />
         <Contact />
       </main>

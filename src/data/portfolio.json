@@ -8,7 +8,7 @@
     "summary": "Results-driven Full Stack & Senior Frontend Developer with 2.5+ years shipping production-grade web and mobile apps across ERP, FinTech, marketplace, and healthcare. I architect scalable REST APIs, craft type-safe React interfaces, integrate real-time systems with Firebase, and own products end to end — from system design to VPS deployment.",
     "location": "Rajkot, Gujarat, India",
     "email": "gunjanukani456@gmail.com",
-    "resumeUrl": "/resume.pdf",
+    "resumeUrl": "/resume.docx",
     "availability": "Open to Senior Frontend & Full Stack roles"
   },
   "skills": [
@@ -103,6 +103,7 @@
       "name": "Enterprise ERP System",
       "category": "ERP · HRMS & CRM",
       "year": "2024",
+      "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&q=80&auto=format&fit=crop",
       "problem": "Enterprise clients juggled leads, deals, attendance, and leave across disconnected tools with no single source of truth.",
       "challenge": "Unify CRM and HRMS into one platform whose modules could scale independently while sharing auth and permissions.",
       "solution": "A modular ERP with CRM and HRMS modules — lead management, deal pipelines, task assignment, attendance, and leave — under shared role-based access.",
@@ -120,6 +121,7 @@
       "name": "PayYit",
       "category": "FinTech Payments",
       "year": "2024",
+      "image": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1200&q=80&auto=format&fit=crop",
       "problem": "A live payments product was producing financial inaccuracies in multi-currency transactions and tax calculations.",
       "challenge": "Stabilize real-money flows — fixing cross-currency rounding and tax logic — with absolutely zero data loss.",
       "solution": "Debugged and hardened the multi-currency transaction engine and rebuilt the tax-calculation and rounding logic for correctness.",
@@ -131,12 +133,13 @@
         { "label": "Data loss", "value": "Zero" },
         { "label": "Focus", "value": "Tax + FX" }
       ],
-      "accent": "#22d3ee"
+      "accent": "#0891b2"
     },
     {
       "name": "Beauty Salon Manager",
       "category": "Cross-Platform Mobile",
       "year": "2024",
+      "image": "https://images.unsplash.com/photo-1560066984-138dadb4c035?w=1200&q=80&auto=format&fit=crop",
       "problem": "Salons needed a single way to handle appointments, services, and staff across both phones and an admin desk.",
       "challenge": "Ship one codebase to iOS and Android with real-time reminders and live data sync across every client.",
       "solution": "A React Native + Expo app with a centralized admin panel for scheduling, service catalogs, and staff coordination.",
@@ -148,12 +151,13 @@
         { "label": "Realtime", "value": "FCM" },
         { "label": "Sync", "value": "Firestore" }
       ],
-      "accent": "#60a5fa"
+      "accent": "#2563eb"
     },
     {
       "name": "Global Scrap Exchange",
       "category": "Marketplace Mobile",
       "year": "2024",
+      "image": "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=1200&q=80&auto=format&fit=crop",
       "problem": "Scrap service providers and clients had no unified marketplace connecting them across regions.",
       "challenge": "Build a dual-platform marketplace with dynamic catalogs, vouchers, and media — all governed from one control plane.",
       "solution": "An iOS/Android marketplace with dynamic product/service catalogs, gift vouchers, and media galleries.",
@@ -165,12 +169,13 @@
         { "label": "Catalogs", "value": "Dynamic" },
         { "label": "Admin", "value": "Command Center" }
       ],
-      "accent": "#a78bfa"
+      "accent": "#9333ea"
     },
     {
       "name": "Legacy One",
       "category": "Secure Document Storage",
       "year": "2024",
+      "image": "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1200&q=80&auto=format&fit=crop",
       "problem": "Teams needed secure, structured document storage with cloud sync and granular access control.",
       "challenge": "Combine cloud integration, multi-language support, and role-based access over reliable structured storage.",
       "solution": "A cloud-integrated secure document management system with Google Drive sync and a role-based admin panel.",
@@ -182,7 +187,7 @@
         { "label": "Storage", "value": "PostgreSQL" },
         { "label": "Languages", "value": "Multi" }
       ],
-      "accent": "#38bdf8"
+      "accent": "#0284c7"
     }
   ],
   "education": [

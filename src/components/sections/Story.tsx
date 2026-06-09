@@ -23,7 +23,7 @@ export function Story() {
       <motion.div
         aria-hidden
         style={{ opacity: bgHue }}
-        className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_top,rgba(124,58,237,0.12),transparent_60%)]"
+        className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_top,rgba(124,58,237,0.06),transparent_60%)]"
       />
 
       <SectionHeading
@@ -34,7 +34,7 @@ export function Story() {
 
       <div ref={ref} className="relative mx-auto mt-20 max-w-4xl">
         {/* center progress line */}
-        <div className="absolute left-[19px] top-2 h-full w-px bg-white/10 md:left-1/2 md:-translate-x-1/2">
+        <div className="absolute left-[19px] top-2 h-full w-px bg-ink/10 md:left-1/2 md:-translate-x-1/2">
           <motion.div
             style={{ scaleY: lineScale, transformOrigin: "top" }}
             className="h-full w-full bg-gradient-to-b from-violet via-blue to-cyan"
@@ -57,19 +57,19 @@ export function Story() {
               >
                 {/* node */}
                 <span className="absolute left-[13px] top-1 z-10 flex h-3.5 w-3.5 -translate-x-1/2 items-center justify-center md:left-1/2">
-                  <span className="absolute h-3.5 w-3.5 animate-ping rounded-full bg-cyan/40" />
-                  <span className="h-3 w-3 rounded-full border-2 border-cyan bg-ink shadow-[0_0_14px_#22d3ee]" />
+                  <span className="absolute h-3.5 w-3.5 animate-ping rounded-full bg-violet/30" />
+                  <span className="h-3 w-3 rounded-full border-2 border-violet bg-white shadow-[0_0_10px_rgba(124,58,237,0.4)]" />
                 </span>
 
                 <div className={`w-full pl-12 md:w-1/2 md:pl-0 ${left ? "md:pr-14 md:text-right" : "md:pl-14"}`}>
-                  <span className="font-mono text-sm tracking-[0.2em] text-cyan">
+                  <span className="font-mono text-sm tracking-[0.2em] text-violet">
                     {chapter.year}
                   </span>
-                  <h3 className="mt-2 font-display text-2xl font-bold text-white md:text-3xl">
+                  <h3 className="mt-2 font-display text-2xl font-bold text-ink md:text-3xl">
                     {chapter.title}
                   </h3>
-                  <p className="mt-1 text-sm font-medium text-blue/90">{chapter.subtitle}</p>
-                  <p className="mt-3 text-white/55">{chapter.description}</p>
+                  <p className="mt-1 text-sm font-medium text-blue">{chapter.subtitle}</p>
+                  <p className="mt-3 text-slate-deep/80">{chapter.description}</p>
                 </div>
                 <div className="hidden md:block md:w-1/2" />
               </motion.div>

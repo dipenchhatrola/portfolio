@@ -53,7 +53,7 @@ export function GlassCard({ children, className, tilt = true, glow = true }: Gla
           className="pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
           style={{
             background:
-              "radial-gradient(420px circle at var(--mx,50%) var(--my,50%), rgba(124,58,237,0.18), transparent 45%)",
+              "radial-gradient(420px circle at var(--mx,50%) var(--my,50%), rgba(124,58,237,0.07), transparent 45%)",
           }}
         />
       )}

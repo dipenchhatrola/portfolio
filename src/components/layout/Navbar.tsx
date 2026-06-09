@@ -43,15 +43,14 @@ export function Navbar() {
         <nav
           className={cn(
             "flex w-full max-w-5xl items-center justify-between rounded-full px-5 py-3 transition-all duration-300",
-            scrolled ? "glass-strong shadow-[0_8px_30px_rgba(0,0,0,0.4)]" : "bg-transparent"
+            scrolled ? "glass-strong" : "bg-transparent"
           )}
         >
           <button
             onClick={() => go("hero")}
-            data-cursor
-            className="flex items-center gap-2 font-display text-base font-bold text-white"
+            className="flex items-center gap-2 font-display text-base font-bold text-ink"
           >
-            <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-gradient-to-br from-violet to-cyan text-sm">
+            <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-gradient-to-br from-violet to-blue text-sm text-white">
               {portfolio.personal.firstName.charAt(0)}
             </span>
             {portfolio.personal.firstName}
@@ -62,8 +61,7 @@ export function Navbar() {
               <button
                 key={l.id}
                 onClick={() => go(l.id)}
-                data-cursor
-                className="rounded-full px-3.5 py-1.5 text-sm text-white/60 transition-colors hover:bg-white/5 hover:text-white"
+                className="rounded-full px-3.5 py-1.5 text-sm text-slate-deep/80 transition-colors hover:bg-ink/5 hover:text-ink"
               >
                 {l.label}
               </button>
@@ -72,8 +70,7 @@ export function Navbar() {
 
           <button
             onClick={() => go("contact")}
-            data-cursor
-            className="hidden rounded-full bg-white px-4 py-2 text-sm font-medium text-ink transition-transform hover:scale-105 md:block"
+            className="hidden rounded-full bg-ink px-4 py-2 text-sm font-medium text-white transition-transform hover:scale-105 md:block"
           >
             Let&apos;s talk
           </button>
@@ -81,7 +78,7 @@ export function Navbar() {
           <button
             onClick={() => setOpen((o) => !o)}
             aria-label="Toggle menu"
-            className="text-white md:hidden"
+            className="text-ink md:hidden"
           >
             {open ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
           </button>
@@ -101,7 +98,7 @@ export function Navbar() {
               <button
                 key={l.id}
                 onClick={() => go(l.id)}
-                className="rounded-xl px-4 py-3 text-left text-white/80 hover:bg-white/5"
+                className="rounded-xl px-4 py-3 text-left text-ink/85 hover:bg-ink/5"
               >
                 {l.label}
               </button>

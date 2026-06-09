@@ -1,7 +1,7 @@
 "use client";
 
-import { useRef, useState } from "react";
-import dynamic from "next/dynamic";
+import { useRef } from "react";
+import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
 import { GithubIcon } from "@/components/ui/BrandIcons";
@@ -10,11 +10,6 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 import { portfolio } from "@/lib/portfolio";
 import type { Project } from "@/lib/types";
 import { fadeUp, staggerContainer } from "@/lib/motion";
-
-const LiquidImage = dynamic(
-  () => import("@/components/three/LiquidImage").then((m) => m.LiquidImage),
-  { ssr: false }
-);
 
 const STEPS: { key: keyof Project; label: string }[] = [
   { key: "problem", label: "Problem" },
@@ -26,13 +21,11 @@ const STEPS: { key: keyof Project; label: string }[] = [
 
 function ProjectChapter({ project, index }: { project: Project; index: number }) {
   const ref = useRef<HTMLDivElement>(null);
-  const [hover, setHover] = useState(false);
   const { scrollYProgress } = useScroll({
     target: ref,
     offset: ["start end", "end start"],
   });
   const y = useTransform(scrollYProgress, [0, 1], [60, -60]);
-  const glowY = useTransform(scrollYProgress, [0, 1], ["-20%", "20%"]);
 
   return (
     <div ref={ref} className="relative grid gap-10 lg:grid-cols-2 lg:gap-16">
@@ -43,37 +36,27 @@ function ProjectChapter({ project, index }: { project: Project; index: number })
           initial="hidden"
           whileInView="show"
           viewport={{ once: true, margin: "-15% 0px" }}
-          onMouseEnter={() => setHover(true)}
-          onMouseLeave={() => setHover(false)}
-          data-cursor
-          className="group relative aspect-[4/3] w-full overflow-hidden rounded-3xl border border-white/10 bg-ink"
+          className="group relative aspect-[4/3] w-full overflow-hidden rounded-3xl border border-ink/10 bg-white shadow-[0_16px_48px_rgba(15,23,42,0.12)]"
         >
-          {/* WebGL liquid-displacement image (mont-fort signature effect) */}
-          <LiquidImage
-            image={project.image}
-            accent={project.accent}
-            hover={hover}
-            className="absolute inset-0"
-          />
-
-          <motion.div
-            aria-hidden
-            style={{ y: glowY, background: `radial-gradient(circle, ${project.accent}55, transparent 60%)` }}
-            className="pointer-events-none absolute -inset-10 mix-blend-screen blur-3xl"
-          />
+          {project.image && (
+            <Image
+              src={project.image}
+              alt={`${project.name} — ${project.category}`}
+              fill
+              sizes="(max-width: 1024px) 90vw, 600px"
+              className="object-cover transition-transform duration-700 group-hover:scale-105"
+            />
+          )}
 
           {/* readability scrim */}
           <div
             aria-hidden
-            className="pointer-events-none absolute inset-0 bg-gradient-to-t from-ink/85 via-ink/10 to-ink/30"
+            className="pointer-events-none absolute inset-0 bg-gradient-to-t from-ink/80 via-ink/10 to-ink/30"
           />
 
           {/* title + meta */}
           <div className="pointer-events-none absolute inset-x-6 top-6 flex flex-col gap-1.5">
-            <span
-              className="font-mono text-[10px] uppercase tracking-[0.25em] sm:text-xs"
-              style={{ color: project.accent }}
-            >
+            <span className="font-mono text-[10px] uppercase tracking-[0.25em] text-white/90 sm:text-xs">
               {project.category} · {project.year}
             </span>
             <span className="font-display text-2xl font-bold text-white drop-shadow sm:text-4xl">
@@ -86,7 +69,7 @@ function ProjectChapter({ project, index }: { project: Project; index: number })
             {project.stats.map((stat) => (
               <div
                 key={stat.label}
-                className="glass rounded-xl px-3 py-2.5 text-center"
+                className="rounded-xl bg-white/90 px-3 py-2.5 text-center backdrop-blur"
               >
                 <div
                   className="font-display text-lg font-bold"
@@ -94,7 +77,7 @@ function ProjectChapter({ project, index }: { project: Project; index: number })
                 >
                   {stat.value}
                 </div>
-                <div className="text-[10px] uppercase tracking-wide text-white/50">
+                <div className="text-[10px] uppercase tracking-wide text-slate-deep/70">
                   {stat.label}
                 </div>
               </div>
@@ -106,12 +89,12 @@ function ProjectChapter({ project, index }: { project: Project; index: number })
       {/* Narrative */}
       <motion.div style={{ y }} className="flex flex-col gap-7 py-6">
         <div className="flex items-center gap-3">
-          <span className="font-mono text-5xl font-bold text-white/10">
+          <span className="font-mono text-5xl font-bold text-ink/10">
             0{index + 1}
           </span>
           <div>
-            <h3 className="font-display text-3xl font-bold text-white">{project.name}</h3>
-            <p className="text-sm text-white/50">{project.category}</p>
+            <h3 className="font-display text-3xl font-bold text-ink">{project.name}</h3>
+            <p className="text-sm text-slate-deep/70">{project.category}</p>
           </div>
         </div>
 
@@ -120,12 +103,12 @@ function ProjectChapter({ project, index }: { project: Project; index: number })
           initial="hidden"
           whileInView="show"
           viewport={{ once: true, margin: "-10% 0px" }}
-          className="relative flex flex-col gap-5 border-l border-white/10 pl-6"
+          className="relative flex flex-col gap-5 border-l border-ink/10 pl-6"
         >
           {STEPS.map((step) => (
             <motion.li key={step.label} variants={fadeUp} className="relative">
               <span
-                className="absolute -left-[31px] top-1.5 h-3 w-3 rounded-full border-2 border-ink"
+                className="absolute -left-[31px] top-1.5 h-3 w-3 rounded-full border-2 border-white shadow"
                 style={{ backgroundColor: project.accent }}
               />
               <span
@@ -134,7 +117,7 @@ function ProjectChapter({ project, index }: { project: Project; index: number })
               >
                 {step.label}
               </span>
-              <p className="mt-1 text-white/70">{project[step.key] as string}</p>
+              <p className="mt-1 text-slate-deep">{project[step.key] as string}</p>
             </motion.li>
           ))}
         </motion.ol>
@@ -143,7 +126,7 @@ function ProjectChapter({ project, index }: { project: Project; index: number })
           {project.stack.map((tech) => (
             <span
               key={tech}
-              className="rounded-full border border-white/10 bg-white/[0.03] px-3 py-1 text-xs text-white/65"
+              className="rounded-full border border-ink/10 bg-white px-3 py-1 text-xs text-slate-deep"
             >
               {tech}
             </span>
@@ -157,8 +140,7 @@ function ProjectChapter({ project, index }: { project: Project; index: number })
                 href={project.link}
                 target="_blank"
                 rel="noreferrer"
-                data-cursor
-                className="inline-flex items-center gap-1.5 text-sm text-white/80 transition-colors hover:text-cyan"
+                className="inline-flex items-center gap-1.5 text-sm font-medium text-ink transition-colors hover:text-violet"
               >
                 Live <ArrowUpRight className="h-4 w-4" />
               </a>
@@ -168,8 +150,7 @@ function ProjectChapter({ project, index }: { project: Project; index: number })
                 href={project.repo}
                 target="_blank"
                 rel="noreferrer"
-                data-cursor
-                className="inline-flex items-center gap-1.5 text-sm text-white/80 transition-colors hover:text-cyan"
+                className="inline-flex items-center gap-1.5 text-sm font-medium text-ink transition-colors hover:text-violet"
               >
                 Code <GithubIcon className="h-4 w-4" />
               </a>

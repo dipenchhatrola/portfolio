@@ -16,9 +16,9 @@ export function Philosophy() {
   return (
     <Section id="philosophy">
       <div aria-hidden className="pointer-events-none absolute inset-0 -z-10">
-        <div className="mesh-blob left-[5%] top-[20%] h-72 w-72 bg-blue/20" />
+        <div className="mesh-blob left-[5%] top-[20%] h-72 w-72 bg-blue/10" />
         <div
-          className="mesh-blob right-[8%] bottom-[10%] h-72 w-72 bg-violet/20"
+          className="mesh-blob right-[8%] bottom-[10%] h-72 w-72 bg-violet/10"
           style={{ animationDelay: "-9s" }}
         />
       </div>
@@ -42,19 +42,19 @@ export function Philosophy() {
             <motion.div key={item.title} variants={fadeUp}>
               <GlassCard className="h-full p-8">
                 <div className="flex items-start gap-5">
-                  <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-violet to-blue text-white shadow-[0_8px_24px_rgba(124,58,237,0.4)]">
+                  <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-violet to-blue text-white shadow-[0_8px_24px_rgba(124,58,237,0.3)]">
                     <Icon className="h-6 w-6" />
                   </span>
                   <div>
-                    <h3 className="font-display text-xl font-bold text-white">
+                    <h3 className="font-display text-xl font-bold text-ink">
                       {item.title}
                     </h3>
-                    <p className="mt-2 leading-relaxed text-white/60">
+                    <p className="mt-2 leading-relaxed text-slate-deep/80">
                       {item.description}
                     </p>
                   </div>
                 </div>
-                <span className="mt-6 block font-mono text-7xl font-bold leading-none text-white/[0.04]">
+                <span className="mt-6 block font-mono text-7xl font-bold leading-none text-ink/[0.04]">
                   0{i + 1}
                 </span>
               </GlassCard>

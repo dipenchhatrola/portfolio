@@ -1,206 +1,146 @@
 "use client";
 
-import dynamic from "next/dynamic";
-import { useRef } from "react";
-import { motion, useScroll, useSpring, useTransform } from "framer-motion";
-import { ArrowDown, Sparkles } from "lucide-react";
+import Image from "next/image";
+import { motion } from "framer-motion";
+import { ArrowDown, Sparkles, MapPin, Briefcase } from "lucide-react";
 import { portfolio } from "@/lib/portfolio";
 import { useTypewriter } from "@/hooks/useTypewriter";
 import { MagneticButton } from "@/components/ui/MagneticButton";
-import { DevDeskScene, SCREEN } from "@/components/three/DevDeskScene";
 import { scrollToId } from "@/lib/scrollTo";
-import { usePrefersReducedMotion } from "@/hooks/useMediaQuery";
+import { fadeUp, staggerContainer } from "@/lib/motion";
 
-const ParticleField = dynamic(
-  () => import("@/components/three/ParticleField").then((m) => m.ParticleField),
-  { ssr: false }
-);
-
-// Code that lives "inside" the monitor and becomes readable as we fly in.
-function ScreenCode() {
-  const { personal } = portfolio;
-  const typed = useTypewriter(personal.roles, 90, 1600);
-  return (
-    <div className="h-full w-full overflow-hidden bg-[#070b1a] font-mono leading-snug">
-      <div className="flex items-center gap-[3px] border-b border-white/10 px-[5%] py-[4%]">
-        <span className="inline-block aspect-square w-[3.5%] rounded-full bg-[#ff5f57]" />
-        <span className="inline-block aspect-square w-[3.5%] rounded-full bg-[#febc2e]" />
-        <span className="inline-block aspect-square w-[3.5%] rounded-full bg-[#28c840]" />
-        <span className="ml-[4%] text-[clamp(5px,1.05vw,12px)] text-white/40">gunjan.ts</span>
-      </div>
-      <div className="px-[6%] py-[5%] text-[clamp(5px,1.1vw,13px)]">
-        <p>
-          <span className="text-violet">const</span>{" "}
-          <span className="text-cyan">gunjan</span>{" "}
-          <span className="text-white/50">=</span>{" "}
-          <span className="text-white/70">{"{"}</span>
-        </p>
-        <p className="pl-[7%] whitespace-nowrap">
-          <span className="text-blue">role</span>
-          <span className="text-white/50">:</span>{" "}
-          <span className="text-[#7ee787]">&quot;{typed}</span>
-          <span className="animate-pulse text-cyan">▍</span>
-          <span className="text-[#7ee787]">&quot;</span>
-          <span className="text-white/50">,</span>
-        </p>
-        <p className="pl-[7%] whitespace-nowrap">
-          <span className="text-blue">stack</span>
-          <span className="text-white/50">:</span>{" "}
-          <span className="text-white/70">[</span>
-          <span className="text-[#7ee787]">&quot;React&quot;</span>
-          <span className="text-white/50">,</span>{" "}
-          <span className="text-[#7ee787]">&quot;Next&quot;</span>
-          <span className="text-white/50">,</span>{" "}
-          <span className="text-[#7ee787]">&quot;Node&quot;</span>
-          <span className="text-white/70">]</span>
-          <span className="text-white/50">,</span>
-        </p>
-        <p className="pl-[7%] whitespace-nowrap">
-          <span className="text-blue">build</span>
-          <span className="text-white/50">:</span>{" "}
-          <span className="text-violet">()</span>{" "}
-          <span className="text-white/50">=&gt;</span>{" "}
-          <span className="text-cyan">ship</span>
-          <span className="text-violet">()</span>
-          <span className="text-white/50">,</span>
-        </p>
-        <p>
-          <span className="text-white/70">{"}"}</span>
-          <span className="text-white/50">;</span>
-        </p>
-      </div>
-    </div>
-  );
-}
+const HERO_IMAGE =
+  "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1200&q=80&auto=format&fit=crop";
 
 export function Hero() {
   const { personal } = portfolio;
-  const reduced = usePrefersReducedMotion();
-  const ref = useRef<HTMLDivElement>(null);
-
-  const { scrollYProgress } = useScroll({
-    target: ref,
-    offset: ["start start", "end start"],
-  });
-  const p = useSpring(scrollYProgress, { stiffness: 80, damping: 26, mass: 0.4 });
-
-  const sceneScale = useTransform(p, [0, 0.85], [1, 6.8]);
-  const introOpacity = useTransform(p, [0, 0.13], [1, 0]);
-  const introY = useTransform(p, [0, 0.13], [0, -50]);
-  const outroOpacity = useTransform(p, [0, 0.15], [1, 0]);
-  const frameFade = useTransform(p, [0.72, 0.92], [1, 0]);
-  const bgFade = useTransform(p, [0, 0.5], [1, 0.15]);
-  const finalFade = useTransform(p, [0.9, 1], [1, 0]);
-
-  // Reduced motion: a calm, static hero (no long scroll zoom).
-  if (reduced) {
-    return (
-      <section id="hero" className="relative flex min-h-[100svh] items-center justify-center overflow-hidden">
-        <div className="absolute inset-0"><ParticleField /></div>
-        <div className="relative z-10 flex flex-col items-center gap-8 px-6 text-center">
-          <div className="relative aspect-[6/5] w-[min(60vw,420px)]">
-            <DevDeskScene className="absolute inset-0 h-full w-full" />
-            <div
-              className="absolute overflow-hidden rounded-[3px] ring-1 ring-cyan/30"
-              style={{
-                left: `${SCREEN.leftPct * 100}%`,
-                top: `${SCREEN.topPct * 100}%`,
-                width: `${SCREEN.widthPct * 100}%`,
-                height: `${SCREEN.heightPct * 100}%`,
-              }}
-            >
-              <ScreenCode />
-            </div>
-          </div>
-          <h1 className="font-display text-5xl font-bold text-gradient sm:text-7xl">{personal.name}</h1>
-          <p className="max-w-xl text-lg text-white/70">{personal.tagline}</p>
-          <div className="flex gap-4">
-            <MagneticButton onClick={() => scrollToId("projects")}>View My Work</MagneticButton>
-            <MagneticButton variant="outline" onClick={() => scrollToId("contact")}>Get in Touch</MagneticButton>
-          </div>
-        </div>
-      </section>
-    );
-  }
+  const typed = useTypewriter(personal.roles, 90, 1600);
 
   return (
-    <section id="hero" ref={ref} className="relative h-[320vh]">
-      <div className="sticky top-0 flex h-[100svh] flex-col items-center justify-center overflow-hidden">
-        {/* clean starfield backdrop */}
-        <motion.div style={{ opacity: bgFade }} className="absolute inset-0">
-          <ParticleField />
-        </motion.div>
-        <div aria-hidden className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_42%,#050816_90%)]" />
+    <section
+      id="hero"
+      className="relative flex min-h-[100svh] items-center overflow-hidden pt-28 pb-16"
+    >
+      {/* soft gradient backdrop */}
+      <div aria-hidden className="pointer-events-none absolute inset-0 -z-10">
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(124,58,237,0.10),transparent_55%),radial-gradient(ellipse_at_bottom_left,rgba(37,99,235,0.08),transparent_55%)]" />
+        <div className="mesh-blob left-[8%] top-[18%] h-72 w-72 bg-violet/20" />
+        <div className="mesh-blob right-[10%] bottom-[12%] h-80 w-80 bg-blue/15" style={{ animationDelay: "-8s" }} />
+      </div>
 
+      <div className="mx-auto grid w-full max-w-7xl items-center gap-14 px-6 md:px-10 lg:grid-cols-[1.1fr_1fr]">
+        {/* copy */}
         <motion.div
-          style={{ opacity: finalFade }}
-          className="relative z-10 flex w-full flex-col items-center justify-center gap-6 px-6 sm:gap-8"
+          variants={staggerContainer(0.1)}
+          initial="hidden"
+          animate="show"
+          className="flex flex-col items-start"
         >
-          {/* intro — name */}
-          <motion.div style={{ opacity: introOpacity, y: introY }} className="flex flex-col items-center text-center">
-            <span className="mb-4 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-1.5 font-mono text-[10px] uppercase tracking-[0.25em] text-white/70 backdrop-blur sm:text-xs">
-              <Sparkles className="h-3.5 w-3.5 text-cyan" />
-              {personal.availability}
-            </span>
-            <p className="mb-2 font-mono text-sm text-cyan">Hi, I&apos;m {personal.firstName}</p>
-            <h1 className="font-display text-5xl font-bold leading-none tracking-tight text-gradient sm:text-6xl md:text-7xl">
-              {personal.name}
-            </h1>
-          </motion.div>
-
-          {/* zoom target: the developer + monitor */}
-          <motion.div
-            style={{
-              scale: sceneScale,
-              transformOrigin: `${SCREEN.originX * 100}% ${SCREEN.originY * 100}%`,
-            }}
-            className="relative aspect-[6/5] w-[min(62vw,420px)]"
+          <motion.span
+            variants={fadeUp}
+            className="inline-flex items-center gap-2 rounded-full border border-violet/20 bg-violet/[0.06] px-4 py-1.5 font-mono text-[10px] uppercase tracking-[0.25em] text-violet sm:text-xs"
           >
-            <DevDeskScene className="absolute inset-0 h-full w-full" />
-            <motion.div
-              style={{
-                opacity: frameFade,
-                left: `${SCREEN.leftPct * 100}%`,
-                top: `${SCREEN.topPct * 100}%`,
-                width: `${SCREEN.widthPct * 100}%`,
-                height: `${SCREEN.heightPct * 100}%`,
-              }}
-              className="absolute overflow-hidden rounded-[3px] ring-1 ring-cyan/30"
-            >
-              <ScreenCode />
-            </motion.div>
+            <Sparkles className="h-3.5 w-3.5" />
+            {personal.availability}
+          </motion.span>
+
+          <motion.p variants={fadeUp} className="mt-6 font-mono text-sm text-blue">
+            Hi, I&apos;m {personal.firstName} 👋
+          </motion.p>
+
+          <motion.h1
+            variants={fadeUp}
+            className="mt-3 font-display text-5xl font-bold leading-[1.02] tracking-tight text-ink sm:text-6xl md:text-7xl"
+          >
+            {personal.name.split(" ")[0]}{" "}
+            <span className="text-gradient">{personal.name.split(" ").slice(1).join(" ")}</span>
+          </motion.h1>
+
+          <motion.p variants={fadeUp} className="mt-5 h-7 font-mono text-lg text-violet sm:text-xl">
+            {typed}
+            <span className="animate-pulse">▍</span>
+          </motion.p>
+
+          <motion.p variants={fadeUp} className="mt-4 max-w-xl text-balance text-lg text-slate-deep sm:text-xl">
+            {personal.tagline}
+          </motion.p>
+
+          <motion.div variants={fadeUp} className="mt-8 flex flex-wrap items-center gap-4">
+            <MagneticButton onClick={() => scrollToId("projects")}>View My Work</MagneticButton>
+            <MagneticButton variant="outline" onClick={() => scrollToId("contact")}>
+              Get in Touch
+            </MagneticButton>
           </motion.div>
 
-          {/* tagline + CTA */}
-          <motion.div style={{ opacity: outroOpacity }} className="flex flex-col items-center text-center">
-            <p className="max-w-2xl text-balance text-lg text-white/70 sm:text-xl md:text-2xl">
-              {personal.tagline}
-            </p>
-            <div className="mt-6 flex flex-wrap items-center justify-center gap-4">
-              <MagneticButton onClick={() => scrollToId("projects")}>View My Work</MagneticButton>
-              <MagneticButton variant="outline" onClick={() => scrollToId("contact")}>
-                Get in Touch
-              </MagneticButton>
-            </div>
+          <motion.div
+            variants={fadeUp}
+            className="mt-10 flex flex-wrap items-center gap-x-6 gap-y-2 text-sm text-slate-deep/80"
+          >
+            <span className="inline-flex items-center gap-1.5">
+              <MapPin className="h-4 w-4 text-violet" /> {personal.location}
+            </span>
+            <span className="inline-flex items-center gap-1.5">
+              <Briefcase className="h-4 w-4 text-blue" /> 2.5+ years shipping production apps
+            </span>
           </motion.div>
         </motion.div>
 
-        {/* scroll cue */}
+        {/* image */}
         <motion.div
-          style={{ opacity: introOpacity }}
-          className="absolute bottom-6 left-1/2 z-30 flex -translate-x-1/2 flex-col items-center gap-2 text-white/50"
+          initial={{ opacity: 0, scale: 0.96, y: 24 }}
+          animate={{ opacity: 1, scale: 1, y: 0 }}
+          transition={{ duration: 0.9, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
+          className="relative mx-auto w-full max-w-[560px]"
         >
-          <span className="font-mono text-[10px] uppercase tracking-[0.3em]">Scroll to enter</span>
-          <span className="flex h-9 w-5 justify-center rounded-full border border-white/20 p-1">
-            <motion.span
-              animate={{ y: [0, 10, 0] }}
-              transition={{ duration: 1.6, repeat: Infinity, ease: "easeInOut" }}
-              className="h-1.5 w-1.5 rounded-full bg-cyan"
+          <div aria-hidden className="absolute -inset-4 -z-10 rounded-[2.5rem] bg-gradient-to-tr from-violet/20 via-blue/10 to-cyan/20 blur-2xl" />
+          <div className="relative aspect-[4/3] overflow-hidden rounded-[2rem] border border-ink/10 shadow-[0_24px_60px_rgba(15,23,42,0.18)]">
+            <Image
+              src={HERO_IMAGE}
+              alt="Developer workspace with code on screen"
+              fill
+              priority
+              sizes="(max-width: 1024px) 90vw, 560px"
+              className="object-cover"
             />
-          </span>
-          <ArrowDown className="h-3.5 w-3.5" />
+          </div>
+
+          {/* floating chips */}
+          <motion.div
+            animate={{ y: [0, -8, 0] }}
+            transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+            className="glass-strong absolute -left-4 top-8 rounded-2xl px-4 py-3 sm:-left-8"
+          >
+            <p className="font-display text-xl font-bold text-ink">5+</p>
+            <p className="text-xs text-slate-deep/80">Production apps</p>
+          </motion.div>
+          <motion.div
+            animate={{ y: [0, 8, 0] }}
+            transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
+            className="glass-strong absolute -right-4 bottom-8 rounded-2xl px-4 py-3 sm:-right-8"
+          >
+            <p className="font-display text-xl font-bold text-gradient-violet">MERN</p>
+            <p className="text-xs text-slate-deep/80">Full-stack specialist</p>
+          </motion.div>
         </motion.div>
       </div>
+
+      {/* scroll cue */}
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 1.2 }}
+        className="absolute bottom-6 left-1/2 z-30 flex -translate-x-1/2 flex-col items-center gap-2 text-slate-deep/60"
+      >
+        <span className="font-mono text-[10px] uppercase tracking-[0.3em]">Scroll</span>
+        <span className="flex h-9 w-5 justify-center rounded-full border border-ink/20 p-1">
+          <motion.span
+            animate={{ y: [0, 10, 0] }}
+            transition={{ duration: 1.6, repeat: Infinity, ease: "easeInOut" }}
+            className="h-1.5 w-1.5 rounded-full bg-violet"
+          />
+        </span>
+        <ArrowDown className="h-3.5 w-3.5" />
+      </motion.div>
     </section>
   );
 }

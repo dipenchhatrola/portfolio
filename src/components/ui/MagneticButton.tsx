@@ -56,10 +56,10 @@ export function MagneticButton({
   const styles = cn(
     "relative inline-flex items-center justify-center gap-2 rounded-full px-7 py-3.5 text-sm font-medium tracking-wide transition-colors duration-300",
     variant === "primary" &&
-      "text-white shadow-[0_8px_30px_rgba(124,58,237,0.45)] bg-gradient-to-r from-violet to-blue hover:shadow-[0_8px_40px_rgba(34,211,238,0.5)]",
+      "text-white shadow-[0_8px_30px_rgba(124,58,237,0.35)] bg-gradient-to-r from-violet to-blue hover:shadow-[0_8px_40px_rgba(124,58,237,0.45)]",
     variant === "outline" &&
-      "text-white border border-white/15 hover:border-cyan/60 hover:bg-white/5",
-    variant === "ghost" && "text-white/80 hover:text-white",
+      "text-ink border border-ink/15 bg-white/70 hover:border-violet/50 hover:bg-violet/[0.04]",
+    variant === "ghost" && "text-ink/80 hover:text-ink",
     className
   );
 

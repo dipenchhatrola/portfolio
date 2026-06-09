@@ -34,10 +34,10 @@ export function Achievements() {
               <div className="font-display text-5xl font-bold text-gradient-violet sm:text-6xl">
                 <AnimatedCounter value={a.value} prefix={a.prefix} suffix={a.suffix} />
               </div>
-              <h3 className="mt-3 font-display text-base font-semibold text-white">
+              <h3 className="mt-3 font-display text-base font-semibold text-ink">
                 {a.label}
               </h3>
-              <p className="mt-1 text-sm text-white/50">{a.description}</p>
+              <p className="mt-1 text-sm text-slate-deep/70">{a.description}</p>
             </GlassCard>
           </motion.div>
         ))}
@@ -48,23 +48,23 @@ export function Achievements() {
         <motion.div variants={fadeUp} initial="hidden" whileInView="show" viewport={{ once: true }}>
           <GlassCard className="h-full p-7" tilt={false}>
             <div className="mb-5 flex items-center gap-2.5">
-              <BadgeCheck className="h-5 w-5 text-cyan" />
-              <h3 className="font-display text-lg font-semibold text-white">Certifications</h3>
+              <BadgeCheck className="h-5 w-5 text-blue" />
+              <h3 className="font-display text-lg font-semibold text-ink">Certifications</h3>
             </div>
             <div className="flex flex-col gap-4">
               {certifications.map((c) => (
                 <div
                   key={c.name}
-                  className="flex items-center justify-between gap-4 border-b border-white/5 pb-4 last:border-0 last:pb-0"
+                  className="flex items-center justify-between gap-4 border-b border-ink/5 pb-4 last:border-0 last:pb-0"
                 >
                   <div className="flex items-center gap-3">
                     <Award className="h-5 w-5 shrink-0 text-violet" />
                     <div>
-                      <p className="font-medium text-white">{c.name}</p>
-                      <p className="text-sm text-white/45">{c.issuer}</p>
+                      <p className="font-medium text-ink">{c.name}</p>
+                      <p className="text-sm text-slate-deep/60">{c.issuer}</p>
                     </div>
                   </div>
-                  <span className="font-mono text-sm text-cyan">{c.year}</span>
+                  <span className="font-mono text-sm text-violet">{c.year}</span>
                 </div>
               ))}
             </div>
@@ -74,18 +74,18 @@ export function Achievements() {
         <motion.div variants={fadeUp} initial="hidden" whileInView="show" viewport={{ once: true }}>
           <GlassCard className="h-full p-7" tilt={false}>
             <div className="mb-5 flex items-center gap-2.5">
-              <GraduationCap className="h-5 w-5 text-cyan" />
-              <h3 className="font-display text-lg font-semibold text-white">Education</h3>
+              <GraduationCap className="h-5 w-5 text-blue" />
+              <h3 className="font-display text-lg font-semibold text-ink">Education</h3>
             </div>
             <div className="flex flex-col gap-4">
               {education.map((e) => (
-                <div key={e.institution}>
+                <div key={e.degree}>
                   <div className="flex items-center justify-between gap-4">
-                    <p className="font-medium text-white">{e.degree}</p>
-                    <span className="font-mono text-sm text-cyan">{e.duration}</span>
+                    <p className="font-medium text-ink">{e.degree}</p>
+                    <span className="font-mono text-sm text-violet">{e.duration}</span>
                   </div>
-                  <p className="text-sm text-blue/80">{e.institution}</p>
-                  {e.detail && <p className="mt-1 text-sm text-white/50">{e.detail}</p>}
+                  <p className="text-sm text-blue">{e.institution}</p>
+                  {e.detail && <p className="mt-1 text-sm text-slate-deep/70">{e.detail}</p>}
                 </div>
               ))}
             </div>

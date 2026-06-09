@@ -30,7 +30,7 @@ export function Preloader() {
         <motion.div
           exit={{ y: "-100%" }}
           transition={{ duration: 0.9, ease: [0.83, 0, 0.17, 1] }}
-          className="fixed inset-0 z-[200] flex flex-col items-center justify-center bg-ink"
+          className="fixed inset-0 z-[200] flex flex-col items-center justify-center bg-background"
         >
           <motion.span
             initial={{ opacity: 0, y: 12 }}
@@ -39,12 +39,12 @@ export function Preloader() {
           >
             {portfolio.personal.name}
           </motion.span>
-          <span className="mt-4 font-mono text-sm text-white/40">
+          <span className="mt-4 font-mono text-sm text-slate-deep/60">
             Loading experience — {count}%
           </span>
-          <div className="mt-3 h-px w-56 overflow-hidden bg-white/10">
+          <div className="mt-3 h-px w-56 overflow-hidden bg-ink/10">
             <motion.div
-              className="h-full bg-gradient-to-r from-violet to-cyan"
+              className="h-full bg-gradient-to-r from-violet to-blue"
               style={{ width: `${count}%` }}
             />
           </div>

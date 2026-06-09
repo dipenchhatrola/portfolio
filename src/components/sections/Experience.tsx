@@ -73,7 +73,7 @@ export function Experience() {
               </div>
             ))}
             <div className="flex w-[40vw] shrink-0 items-center justify-center">
-              <p className="font-display text-2xl font-bold text-white/20">
+              <p className="font-display text-2xl font-bold text-ink/20">
                 ...and the next chapter is yours.
               </p>
             </div>
@@ -92,32 +92,32 @@ function ExperienceCard({
   index: number;
 }) {
   return (
-    <div className="glass-strong relative h-full overflow-hidden rounded-3xl p-8">
-      <div className="pointer-events-none absolute -right-16 -top-16 h-48 w-48 rounded-full bg-violet/20 blur-3xl" />
-      <span className="font-mono text-6xl font-bold text-white/5">0{index + 1}</span>
-      <div className="mt-2 flex flex-wrap items-center gap-x-4 gap-y-1 text-sm text-white/50">
+    <div className="relative h-full overflow-hidden rounded-3xl border border-ink/[0.08] bg-white p-8 shadow-[0_8px_32px_rgba(15,23,42,0.06)]">
+      <div className="pointer-events-none absolute -right-16 -top-16 h-48 w-48 rounded-full bg-violet/10 blur-3xl" />
+      <span className="font-mono text-6xl font-bold text-ink/5">0{index + 1}</span>
+      <div className="mt-2 flex flex-wrap items-center gap-x-4 gap-y-1 text-sm text-slate-deep/80">
         <span className="inline-flex items-center gap-1.5">
-          <Building2 className="h-4 w-4 text-cyan" /> {exp.company}
+          <Building2 className="h-4 w-4 text-violet" /> {exp.company}
         </span>
         <span className="inline-flex items-center gap-1.5">
           <MapPin className="h-4 w-4 text-blue" /> {exp.location}
         </span>
-        <span className="font-mono text-cyan">{exp.duration}</span>
+        <span className="font-mono text-violet">{exp.duration}</span>
       </div>
 
-      <h3 className="mt-3 font-display text-2xl font-bold text-white sm:text-3xl">
+      <h3 className="mt-3 font-display text-2xl font-bold text-ink sm:text-3xl">
         {exp.role}
       </h3>
-      <p className="mt-2 text-white/60">{exp.summary}</p>
+      <p className="mt-2 text-slate-deep/80">{exp.summary}</p>
 
-      <div className="mt-5 flex items-start gap-2 rounded-2xl border border-cyan/20 bg-cyan/[0.04] p-4">
-        <TrendingUp className="mt-0.5 h-5 w-5 shrink-0 text-cyan" />
-        <p className="text-sm font-medium text-white/85">{exp.impact}</p>
+      <div className="mt-5 flex items-start gap-2 rounded-2xl border border-blue/15 bg-blue/[0.04] p-4">
+        <TrendingUp className="mt-0.5 h-5 w-5 shrink-0 text-blue" />
+        <p className="text-sm font-medium text-ink/90">{exp.impact}</p>
       </div>
 
       <ul className="mt-5 space-y-2">
         {exp.achievements.map((a) => (
-          <li key={a} className="flex gap-2.5 text-sm text-white/65">
+          <li key={a} className="flex gap-2.5 text-sm text-slate-deep/90">
             <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-violet" />
             {a}
           </li>
@@ -128,7 +128,7 @@ function ExperienceCard({
         {exp.stack.map((t) => (
           <span
             key={t}
-            className="rounded-full border border-white/10 px-2.5 py-0.5 text-xs text-white/55"
+            className="rounded-full border border-ink/10 bg-background px-2.5 py-0.5 text-xs text-slate-deep/80"
           >
             {t}
           </span>

@@ -16,10 +16,10 @@ export const skillCategories: SkillCategory[] = [
 
 export const categoryColor: Record<SkillCategory, string> = {
   Frontend: "#7c3aed",
-  Backend: "#22d3ee",
-  Mobile: "#60a5fa",
-  Database: "#a78bfa",
-  Cloud: "#38bdf8",
-  DevOps: "#818cf8",
-  Tools: "#f472b6",
+  Backend: "#0891b2",
+  Mobile: "#2563eb",
+  Database: "#9333ea",
+  Cloud: "#0284c7",
+  DevOps: "#4f46e5",
+  Tools: "#db2777",
 };

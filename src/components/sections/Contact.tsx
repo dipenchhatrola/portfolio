@@ -1,8 +1,8 @@
 "use client";
 
-import dynamic from "next/dynamic";
+import Image from "next/image";
 import { motion } from "framer-motion";
-import { Mail, Download, ArrowUpRight, Globe as GlobeIcon } from "lucide-react";
+import { Mail, Download, ArrowUpRight, MapPin, Globe as GlobeIcon } from "lucide-react";
 import { Section } from "@/components/ui/Section";
 import { RevealText } from "@/components/ui/RevealText";
 import { MagneticButton } from "@/components/ui/MagneticButton";
@@ -18,9 +18,8 @@ import { portfolio } from "@/lib/portfolio";
 import { fadeUp, staggerContainer } from "@/lib/motion";
 import type { Social } from "@/lib/types";
 
-const Globe = dynamic(() => import("@/components/three/Globe").then((m) => m.Globe), {
-  ssr: false,
-});
+const CONTACT_IMAGE =
+  "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=1200&q=80&auto=format&fit=crop";
 
 const platformIcon: Record<Social["platform"], React.ComponentType<{ className?: string }>> = {
   github: GithubIcon,
@@ -40,18 +39,37 @@ export function Contact() {
     <Section id="contact" className="overflow-hidden pb-32">
       {/* floating gradients */}
       <div aria-hidden className="pointer-events-none absolute inset-0 -z-10">
-        <div className="mesh-blob left-1/2 top-0 h-96 w-96 -translate-x-1/2 bg-violet/25" />
+        <div className="mesh-blob left-1/2 top-0 h-96 w-96 -translate-x-1/2 bg-violet/15" />
         <div
-          className="mesh-blob right-[15%] bottom-[20%] h-72 w-72 bg-cyan/20"
+          className="mesh-blob right-[15%] bottom-[20%] h-72 w-72 bg-blue/10"
           style={{ animationDelay: "-7s" }}
         />
       </div>
 
       <div className="relative grid items-center gap-12 lg:grid-cols-2">
-        {/* Globe */}
-        <div className="relative order-2 h-[360px] w-full sm:h-[460px] lg:order-1 lg:h-[560px]">
-          <Globe />
-        </div>
+        {/* image */}
+        <motion.div
+          initial={{ opacity: 0, y: 24 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+          className="relative order-2 w-full lg:order-1"
+        >
+          <div aria-hidden className="absolute -inset-4 -z-10 rounded-[2.5rem] bg-gradient-to-tr from-blue/15 via-violet/10 to-cyan/15 blur-2xl" />
+          <div className="relative aspect-[4/3] overflow-hidden rounded-[2rem] border border-ink/10 shadow-[0_24px_60px_rgba(15,23,42,0.14)]">
+            <Image
+              src={CONTACT_IMAGE}
+              alt="People collaborating around laptops"
+              fill
+              sizes="(max-width: 1024px) 90vw, 600px"
+              className="object-cover"
+            />
+          </div>
+          <div className="glass-strong absolute -bottom-5 left-6 flex items-center gap-2 rounded-2xl px-4 py-3">
+            <MapPin className="h-4 w-4 text-violet" />
+            <span className="text-sm font-medium text-ink">{personal.location}</span>
+          </div>
+        </motion.div>
 
         {/* CTA */}
         <motion.div
@@ -63,19 +81,19 @@ export function Contact() {
         >
           <motion.span
             variants={fadeUp}
-            className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-1.5 font-mono text-xs uppercase tracking-[0.25em] text-cyan"
+            className="inline-flex items-center gap-2 rounded-full border border-violet/20 bg-violet/[0.06] px-4 py-1.5 font-mono text-xs uppercase tracking-[0.25em] text-violet"
           >
-            <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-green-400 shadow-[0_0_10px_#4ade80]" />
+            <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-green-500" />
             {personal.availability}
           </motion.span>
 
           <RevealText
             as="h2"
             text="Let's build something unforgettable."
-            className="mt-6 font-display text-4xl font-bold leading-[1.05] tracking-tight text-white sm:text-5xl md:text-6xl"
+            className="mt-6 font-display text-4xl font-bold leading-[1.05] tracking-tight text-ink sm:text-5xl md:text-6xl"
           />
 
-          <motion.p variants={fadeUp} className="mt-5 max-w-md text-lg text-white/60">
+          <motion.p variants={fadeUp} className="mt-5 max-w-md text-lg text-slate-deep/80">
             Have a project, a role, or an idea worth chasing? I&apos;m one message away.
           </motion.p>
 
@@ -106,15 +124,14 @@ export function Contact() {
                   href={s.url}
                   target={s.platform === "email" ? undefined : "_blank"}
                   rel="noreferrer"
-                  data-cursor
                   className={spanFull ? "group col-span-2" : "group"}
                 >
                   <GlassCard className="flex items-center justify-between p-4" tilt={false}>
                     <span className="flex items-center gap-3">
-                      <Icon className="h-5 w-5 text-cyan" />
-                      <span className="text-sm font-medium text-white/85">{s.label}</span>
+                      <Icon className="h-5 w-5 text-violet" />
+                      <span className="text-sm font-medium text-ink/90">{s.label}</span>
                     </span>
-                    <ArrowUpRight className="h-4 w-4 text-white/30 transition-all group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:text-cyan" />
+                    <ArrowUpRight className="h-4 w-4 text-ink/30 transition-all group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:text-violet" />
                   </GlassCard>
                 </a>
               );

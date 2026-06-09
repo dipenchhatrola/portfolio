@@ -8,28 +8,26 @@ export function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="relative border-t border-white/5 px-6 py-10">
+    <footer className="relative border-t border-ink/5 bg-white px-6 py-10">
       <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 sm:flex-row">
-        <p className="text-sm text-white/40">
-          © {year} {personal.name}. Crafted with Next.js, Three.js & care.
+        <p className="text-sm text-slate-deep/60">
+          © {year} {personal.name}. Crafted with Next.js & care.
         </p>
-        <div className="flex items-center gap-5 text-sm text-white/50">
+        <div className="flex items-center gap-5 text-sm text-slate-deep/70">
           {portfolio.socials.map((s) => (
             <a
               key={s.label}
               href={s.url}
               target="_blank"
               rel="noreferrer"
-              data-cursor
-              className="transition-colors hover:text-cyan"
+              className="transition-colors hover:text-violet"
             >
               {s.label}
             </a>
           ))}
           <button
             onClick={() => scrollToId("hero")}
-            data-cursor
-            className="transition-colors hover:text-cyan"
+            className="transition-colors hover:text-violet"
           >
             Back to top ↑
           </button>
