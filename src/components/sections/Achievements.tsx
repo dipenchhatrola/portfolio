@@ -84,8 +84,7 @@ export function Achievements() {
                     <p className="font-medium text-ink">{e.degree}</p>
                     <span className="font-mono text-sm text-violet">{e.duration}</span>
                   </div>
-                  <p className="text-sm text-blue">{e.institution}</p>
-                  {e.detail && <p className="mt-1 text-sm text-slate-deep/70">{e.detail}</p>}
+  
                 </div>
               ))}
             </div>
