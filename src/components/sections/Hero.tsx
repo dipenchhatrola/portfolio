@@ -110,16 +110,16 @@ export function Hero() {
             transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
             className="glass-strong absolute -left-4 top-8 rounded-2xl px-4 py-3 sm:-left-8"
           >
-            <p className="font-display text-xl font-bold text-ink">5+</p>
-            <p className="text-xs text-slate-deep/80">Production apps</p>
+            <p className="font-display text-xl font-bold text-ink">1+</p>
+            <p className="text-xs text-slate-deep/80">Years experience</p>
           </motion.div>
           <motion.div
             animate={{ y: [0, 8, 0] }}
             transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
             className="glass-strong absolute -right-4 bottom-8 rounded-2xl px-4 py-3 sm:-right-8"
           >
-            <p className="font-display text-xl font-bold text-gradient-violet">MERN</p>
-            <p className="text-xs text-slate-deep/80">Full-stack specialist</p>
+            <p className="font-display text-xl font-bold text-gradient-violet">React + Power Platform</p>
+            <p className="text-xs text-slate-deep/80">Low-code &amp; frontend specialist</p>
           </motion.div>
         </motion.div>
       </div>

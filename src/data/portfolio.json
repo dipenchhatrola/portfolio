@@ -1,247 +1,227 @@
 {
   "personal": {
-    "name": "Gunjan Ukani",
-    "firstName": "Gunjan",
-    "role": "Full Stack & Senior Frontend Engineer",
-    "tagline": "I turn complex business logic into fast, scalable products.",
-    "roles": ["Full Stack Developer", "Senior Frontend Engineer", "MERN Specialist", "Product Builder"],
-    "summary": "Results-driven Full Stack & Senior Frontend Developer with 2.5+ years shipping production-grade web and mobile apps across ERP, FinTech, marketplace, and healthcare. I architect scalable REST APIs, craft type-safe React interfaces, integrate real-time systems with Firebase, and own products end to end — from system design to VPS deployment.",
+    "name": "Dipen Chhatrola",
+    "firstName": "Dipen",
+    "role": "Software Developer · React.js · Microsoft Power Platform",
+    "tagline": "I turn complex business requirements into intuitive, scalable solutions.",
+    "roles": ["Software Developer", "React.js Developer", "Power Platform Developer", "Data Analyst"],
+    "summary": "Results-driven Software Developer with 1+ year of hands-on experience building scalable web applications using React.js, Microsoft Power Platform (Power Apps, Power Automate, Power BI), and Laravel. I translate complex business requirements into intuitive low-code/no-code solutions that streamline operations and boost productivity, with a strong foundation in frontend development, UI/UX principles, and agile methodologies.",
     "location": "Rajkot, Gujarat, India",
-    "email": "gunjanukani456@gmail.com",
+    "email": "chhatroladipen@gmail.com",
     "resumeUrl": "/resume.docx",
-    "availability": "Open to Senior Frontend & Full Stack roles"
+    "availability": "Open to Software, Frontend, Power Platform & Data Analytics roles"
   },
   "skills": [
-    { "name": "React.js", "category": "Frontend", "level": 95 },
-    { "name": "Next.js", "category": "Frontend", "level": 92 },
-    { "name": "TypeScript", "category": "Frontend", "level": 90 },
-    { "name": "JavaScript (ES6+)", "category": "Frontend", "level": 92 },
-    { "name": "Tailwind CSS", "category": "Frontend", "level": 90 },
-    { "name": "Redux", "category": "Frontend", "level": 82 },
-    { "name": "Framer Motion", "category": "Frontend", "level": 78 },
-    { "name": "Ant Design", "category": "Frontend", "level": 75 },
-    { "name": "Node.js", "category": "Backend", "level": 88 },
-    { "name": "Express.js", "category": "Backend", "level": 88 },
-    { "name": "REST APIs", "category": "Backend", "level": 88 },
-    { "name": "JWT Auth", "category": "Backend", "level": 84 },
-    { "name": "WebSockets", "category": "Backend", "level": 72 },
-    { "name": "React Native", "category": "Mobile", "level": 85 },
-    { "name": "Expo", "category": "Mobile", "level": 82 },
-    { "name": "MongoDB", "category": "Database", "level": 90 },
-    { "name": "PostgreSQL", "category": "Database", "level": 80 },
-    { "name": "Firebase", "category": "Database", "level": 85 },
-    { "name": "Nginx", "category": "Cloud", "level": 76 },
-    { "name": "VPS Deployment", "category": "Cloud", "level": 78 },
-    { "name": "Linux (Ubuntu)", "category": "DevOps", "level": 78 },
-    { "name": "CI/CD", "category": "DevOps", "level": 75 },
-    { "name": "Git & GitHub", "category": "DevOps", "level": 90 },
-    { "name": "Postman", "category": "Tools", "level": 85 },
-    { "name": "Figma", "category": "Tools", "level": 75 }
+    { "name": "React.js", "category": "Frontend", "level": 92 },
+    { "name": "JavaScript (ES6+)", "category": "Frontend", "level": 90 },
+    { "name": "HTML5", "category": "Frontend", "level": 92 },
+    { "name": "CSS3", "category": "Frontend", "level": 90 },
+    { "name": "Bootstrap 5", "category": "Frontend", "level": 88 },
+    { "name": "Responsive Web Design", "category": "Frontend", "level": 88 },
+    { "name": "UI/UX Principles", "category": "Frontend", "level": 80 },
+    { "name": "PHP", "category": "Backend", "level": 80 },
+    { "name": "Laravel", "category": "Backend", "level": 78 },
+    { "name": "RESTful APIs", "category": "Backend", "level": 84 },
+    { "name": "Power Apps", "category": "Cloud", "level": 90 },
+    { "name": "Power Automate", "category": "Cloud", "level": 88 },
+    { "name": "Power BI", "category": "Cloud", "level": 86 },
+    { "name": "SharePoint", "category": "Cloud", "level": 80 },
+    { "name": "Dataverse", "category": "Database", "level": 84 },
+    { "name": "MySQL", "category": "Database", "level": 82 },
+    { "name": "SQL", "category": "Database", "level": 80 },
+    { "name": "Data Analysis", "category": "Tools", "level": 85 },
+    { "name": "Data Visualization", "category": "Tools", "level": 85 },
+    { "name": "Excel", "category": "Tools", "level": 82 },
+    { "name": "ChatGPT & Gemini", "category": "Tools", "level": 80 },
+    { "name": "Canva", "category": "Tools", "level": 78 },
+    { "name": "Google Ads", "category": "Tools", "level": 70 },
+    { "name": "Git & GitHub", "category": "DevOps", "level": 85 },
+    { "name": "Agile Methodology", "category": "DevOps", "level": 78 }
   ],
   "story": [
     {
-      "year": "2018",
+      "year": "2019",
       "title": "The Foundation",
-      "subtitle": "BSc in Information Technology",
-      "description": "It began at Atmiya University, where the fundamentals of computing turned into a fascination with the web. The first lines of code became a habit I never broke."
+      "subtitle": "BCA at Atmiya University",
+      "description": "It began at Atmiya University, Rajkot, where the fundamentals of computing turned into a fascination with building for the web. The first lines of code became a habit that never broke."
     },
     {
-      "year": "2021",
+      "year": "2022",
       "title": "Going Deeper",
-      "subtitle": "MSc IT + the React leap",
-      "description": "While pursuing my Master's, I committed to React, earned my first development certification, and started building real interfaces instead of just studying them."
+      "subtitle": "M.Sc. IT + the React leap",
+      "description": "While pursuing my Master's in Information Technology, I committed to React.js and modern frontend development — building real interfaces instead of just studying them."
     },
     {
-      "year": "2023",
+      "year": "2024",
       "title": "Into Production",
-      "subtitle": "First professional role — healthcare",
-      "description": "At Imbuesoft, I shipped a Medical Management System frontend with role-based views and automated clinical reporting. Tutorials gave way to real users and real responsibility."
+      "subtitle": "React.js Developer → Data Analyst",
+      "description": "At Imbuesoft I shipped responsive single-page applications with React.js, then moved to Ace Software Exports as a Junior Data Analyst — turning raw data into insights that informed real business decisions."
     },
     {
       "year": "Now",
-      "title": "Full-Stack Ownership",
-      "subtitle": "ERP · FinTech · Marketplace",
-      "description": "At Encrypted Infoweb I architect and ship production apps across four industries — owning the lifecycle from system design and APIs to VPS deployment and live monitoring."
+      "title": "Low-Code Velocity",
+      "subtitle": "Microsoft Power Platform",
+      "description": "At Torridwave Technologies I build Canvas and Model-Driven Power Apps, automate workflows with Power Automate, and surface real-time intelligence with Power BI — delivering measurable business value fast."
     }
   ],
   "experience": [
     {
-      "company": "Encrypted Infoweb",
-      "role": "MERN Stack Developer / Full Stack Engineer",
-      "duration": "Nov 2023 — Present",
+      "company": "Torridwave Technologies",
+      "role": "Software Developer",
+      "duration": "Jan 2025 — Feb 2025",
       "location": "Rajkot, India",
-      "summary": "Architecting and shipping production web & mobile apps for real business clients across ERP, FinTech, and marketplace verticals.",
-      "impact": "Delivered 5+ production-grade applications end to end — from system design and REST APIs to VPS deployment and live monitoring.",
+      "summary": "Built low-code/no-code business solutions on the Microsoft Power Platform, from Canvas apps to automated flows and BI dashboards.",
+      "impact": "Streamlined internal business workflows and reduced manual data entry by an estimated 30% with Power Apps and Power Automate.",
       "achievements": [
-        "Architected 5+ production apps with React, Next.js, TypeScript, Node, Express & MongoDB for real, paying clients.",
-        "Engineered REST APIs with optimized MongoDB/PostgreSQL queries and indexing to cut average response times.",
-        "Built type-safe, reusable React component libraries that raised UI velocity across concurrent projects.",
-        "Integrated Firebase (Firestore, Realtime DB, Cloud Messaging) for push notifications and live data sync.",
-        "Deployed and maintained apps on VPS with Nginx + Ubuntu, establishing CI/CD-ready release workflows.",
-        "Resolved critical multi-currency transaction, tax, and PDF-pipeline bugs on live FinTech platforms."
+        "Designed and deployed Canvas and Model-Driven Power Apps, reducing manual data entry by an estimated 30%.",
+        "Engineered Power Automate flows that eliminated bottlenecks and boosted productivity across cross-functional departments.",
+        "Integrated Dataverse as the backend data layer, ensuring data consistency, scalability, and compliance.",
+        "Collaborated with stakeholders to translate complex requirements into efficient low-code designs on tight timelines.",
+        "Built interactive Power BI dashboards surfacing real-time business intelligence for management teams.",
+        "Leveraged SharePoint for document management and collaboration, improving information accessibility."
       ],
-      "stack": ["Next.js", "React", "TypeScript", "Node.js", "Express", "MongoDB", "Firebase", "Nginx"]
+      "stack": ["Power Apps", "Power Automate", "Power BI", "Dataverse", "SharePoint"]
+    },
+    {
+      "company": "Ace Software Exports Limited",
+      "role": "Junior Data Analyst",
+      "duration": "Jul 2024 — Jan 2025",
+      "location": "Rajkot, India",
+      "summary": "Owned the data pipeline from collection and cleaning through analysis and visualization for business reporting.",
+      "impact": "Improved data quality standards to reduce reporting errors and automated repetitive processing to cut analysis cycle time.",
+      "achievements": [
+        "Collected, cleaned, and validated large datasets to ensure accuracy and integrity, reducing reporting errors.",
+        "Performed exploratory data analysis (EDA) to uncover trends and actionable insights for business strategy.",
+        "Developed data visualization reports that let stakeholders interpret complex data through clear dashboards.",
+        "Automated repetitive data processing tasks, freeing capacity for higher-value analytical work.",
+        "Delivered on-time reporting aligned with business KPIs in collaboration with cross-functional teams."
+      ],
+      "stack": ["Data Analysis", "Data Visualization", "Power BI", "Excel", "SQL"]
     },
     {
       "company": "Imbuesoft LLP",
       "role": "React.js Developer",
-      "duration": "May 2023 — Oct 2023",
+      "duration": "Jan 2024 — May 2024",
       "location": "Ahmedabad, India",
-      "summary": "Built the frontend for a healthcare Medical Management System used by clinical staff.",
-      "impact": "Delivered a complete patient-records UI with role-based views and one-click clinical reporting in 6 months.",
+      "summary": "Developed dynamic, responsive single-page applications with React.js for seamless desktop and mobile experiences.",
+      "impact": "Built a reusable component architecture that improved maintainability and reduced development time for new features.",
       "achievements": [
-        "Developed a full patient record management UI with role-based views and responsive layouts.",
-        "Engineered a reusable component library with optimized rendering to cut UI duplication.",
-        "Implemented automated PDF generation for clinical reports and invoices with React-PDF.",
-        "Delivered consistent mobile-first UX across desktop, tablet, and mobile viewports."
+        "Developed responsive SPAs with React.js, delivering seamless UX across desktop and mobile devices.",
+        "Built reusable React components with a clean architecture, cutting development time for new features.",
+        "Integrated RESTful APIs for real-time data rendering and interactive user interfaces.",
+        "Implemented pixel-perfect designs with Bootstrap 5 alongside UI/UX designers, ensuring cross-browser compatibility.",
+        "Participated in code reviews and agile sprint ceremonies, contributing to continuous delivery."
       ],
-      "stack": ["React.js", "JavaScript", "React-PDF", "CSS3", "Responsive UI"]
+      "stack": ["React.js", "JavaScript (ES6+)", "Bootstrap 5", "REST APIs", "HTML5", "CSS3"]
     }
   ],
   "projects": [
     {
-      "name": "Enterprise ERP System",
-      "category": "ERP · HRMS & CRM",
-      "year": "2024",
+      "name": "Power Apps Business Process Automation Suite",
+      "category": "Low-Code · Power Platform",
+      "year": "2025",
       "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&q=80&auto=format&fit=crop",
-      "problem": "Enterprise clients juggled leads, deals, attendance, and leave across disconnected tools with no single source of truth.",
-      "challenge": "Unify CRM and HRMS into one platform whose modules could scale independently while sharing auth and permissions.",
-      "solution": "A modular ERP with CRM and HRMS modules — lead management, deal pipelines, task assignment, attendance, and leave — under shared role-based access.",
-      "implementation": "Built on the MERN stack with TypeScript and Tailwind, using JWT-based RBAC and a modular architecture that lets each module scale on its own.",
-      "results": "A unified platform adopted by enterprise clients, replacing fragmented tools with one coherent, permission-aware system.",
-      "stack": ["MERN Stack", "TypeScript", "Tailwind CSS", "JWT"],
+      "problem": "Approval workflows, inventory tracking, and employee onboarding ran on manual forms and scattered spreadsheets.",
+      "challenge": "Automate end-to-end business processes with low-code tooling while keeping data consistent and reporting real-time.",
+      "solution": "A suite of Canvas and Model-Driven Power Apps automating approvals, inventory, and onboarding, with Power Automate flows triggered on form submissions.",
+      "implementation": "Built on Power Apps with Dataverse as the data layer, Power Automate for workflow automation, SharePoint for document management, and Power BI for consolidated KPI dashboards.",
+      "results": "Reduced manual form processing time by approximately 40% and delivered a single real-time management reporting view across multiple data sources.",
+      "stack": ["Power Apps", "Power Automate", "Dataverse", "Power BI", "SharePoint"],
       "stats": [
-        { "label": "Modules", "value": "6+" },
-        { "label": "Access", "value": "RBAC" },
-        { "label": "Auth", "value": "JWT" }
+        { "label": "Processing time", "value": "-40%" },
+        { "label": "Apps", "value": "Canvas + Model-Driven" },
+        { "label": "Dashboards", "value": "Real-time" }
       ],
       "accent": "#7c3aed"
     },
     {
-      "name": "PayYit",
-      "category": "FinTech Payments",
+      "name": "React.js Dynamic Web Application",
+      "category": "Frontend · SPA",
       "year": "2024",
-      "image": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1200&q=80&auto=format&fit=crop",
-      "problem": "A live payments product was producing financial inaccuracies in multi-currency transactions and tax calculations.",
-      "challenge": "Stabilize real-money flows — fixing cross-currency rounding and tax logic — with absolutely zero data loss.",
-      "solution": "Debugged and hardened the multi-currency transaction engine and rebuilt the tax-calculation and rounding logic for correctness.",
-      "implementation": "Worked across the MERN stack with TypeScript, also optimizing the PDF invoice/reporting pipeline for speed and regulatory-compliant output.",
-      "results": "Restored financial accuracy and system stability on a live platform — with zero data loss during remediation.",
-      "stack": ["MERN Stack", "TypeScript", "Tailwind CSS"],
+      "image": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=1200&q=80&auto=format&fit=crop",
+      "problem": "The product needed a fast, modular frontend that rendered live data and worked consistently across every device and browser.",
+      "challenge": "Architect a component-based SPA that stayed maintainable while feature modules kept growing.",
+      "solution": "A modular React.js single-page application with dynamic data rendering via REST API integration and fully responsive layouts.",
+      "implementation": "Built with React.js, JavaScript (ES6+), and Bootstrap 5, structured around a reusable component library with clean separation of concerns.",
+      "results": "Improved page load performance, achieved consistent UX across screen sizes, and reduced feature development time for subsequent modules by an estimated 25%.",
+      "stack": ["React.js", "JavaScript (ES6+)", "Bootstrap 5", "REST APIs", "HTML5", "CSS3"],
       "stats": [
-        { "label": "Currencies", "value": "Multi" },
-        { "label": "Data loss", "value": "Zero" },
-        { "label": "Focus", "value": "Tax + FX" }
+        { "label": "Dev time saved", "value": "25%" },
+        { "label": "Architecture", "value": "Component-based" },
+        { "label": "Layouts", "value": "Responsive" }
       ],
       "accent": "#0891b2"
     },
     {
-      "name": "Beauty Salon Manager",
-      "category": "Cross-Platform Mobile",
+      "name": "Data Analytics & Visualization Dashboard",
+      "category": "Data · Business Intelligence",
       "year": "2024",
-      "image": "https://images.unsplash.com/photo-1560066984-138dadb4c035?w=1200&q=80&auto=format&fit=crop",
-      "problem": "Salons needed a single way to handle appointments, services, and staff across both phones and an admin desk.",
-      "challenge": "Ship one codebase to iOS and Android with real-time reminders and live data sync across every client.",
-      "solution": "A React Native + Expo app with a centralized admin panel for scheduling, service catalogs, and staff coordination.",
-      "implementation": "Integrated Firebase Cloud Messaging for push reminders and promotions, with Firestore keeping mobile clients in real-time sync.",
-      "results": "A cross-platform product serving active users, replacing manual booking with live, notification-driven scheduling.",
-      "stack": ["React Native", "Expo", "MERN Stack", "TypeScript", "Firebase"],
+      "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&q=80&auto=format&fit=crop",
+      "problem": "Stakeholders couldn't monitor business metrics without waiting on manual, error-prone reporting cycles.",
+      "challenge": "Build an end-to-end pipeline from raw data ingestion to polished dashboards that non-technical users could read at a glance.",
+      "solution": "An analytics pipeline covering data ingestion, cleaning, analysis, and final visualization dashboards for business reporting.",
+      "implementation": "Combined SQL and Excel for data preparation with Power BI for interactive dashboards monitoring real-time metrics and trends.",
+      "results": "Enabled stakeholders to track metrics in real time, supporting faster and more informed decision-making.",
+      "stack": ["Power BI", "SQL", "Excel", "Data Analysis", "Data Visualization"],
       "stats": [
-        { "label": "Platforms", "value": "iOS + Android" },
-        { "label": "Realtime", "value": "FCM" },
-        { "label": "Sync", "value": "Firestore" }
+        { "label": "Pipeline", "value": "End-to-end" },
+        { "label": "Metrics", "value": "Real-time" },
+        { "label": "Reporting", "value": "Self-serve" }
       ],
       "accent": "#2563eb"
-    },
-    {
-      "name": "Global Scrap Exchange",
-      "category": "Marketplace Mobile",
-      "year": "2024",
-      "image": "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=1200&q=80&auto=format&fit=crop",
-      "problem": "Scrap service providers and clients had no unified marketplace connecting them across regions.",
-      "challenge": "Build a dual-platform marketplace with dynamic catalogs, vouchers, and media — all governed from one control plane.",
-      "solution": "An iOS/Android marketplace with dynamic product/service catalogs, gift vouchers, and media galleries.",
-      "implementation": "Built with React Native, Node.js, MongoDB, and Firebase, plus a unified admin 'Command Center' for global settings, team assignment, and localized content.",
-      "results": "A distributed marketplace operable from a single admin hub, connecting providers and clients at scale.",
-      "stack": ["React Native", "Node.js", "MongoDB", "Firebase"],
-      "stats": [
-        { "label": "Platforms", "value": "2" },
-        { "label": "Catalogs", "value": "Dynamic" },
-        { "label": "Admin", "value": "Command Center" }
-      ],
-      "accent": "#9333ea"
-    },
-    {
-      "name": "Legacy One",
-      "category": "Secure Document Storage",
-      "year": "2024",
-      "image": "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1200&q=80&auto=format&fit=crop",
-      "problem": "Teams needed secure, structured document storage with cloud sync and granular access control.",
-      "challenge": "Combine cloud integration, multi-language support, and role-based access over reliable structured storage.",
-      "solution": "A cloud-integrated secure document management system with Google Drive sync and a role-based admin panel.",
-      "implementation": "Built on the MERN stack with TypeScript and Tailwind, backed by PostgreSQL for structured storage and multi-language support throughout.",
-      "results": "A secure, permission-aware document platform with live cloud sync and localized access.",
-      "stack": ["MERN Stack", "TypeScript", "Tailwind CSS", "PostgreSQL"],
-      "stats": [
-        { "label": "Sync", "value": "Google Drive" },
-        { "label": "Storage", "value": "PostgreSQL" },
-        { "label": "Languages", "value": "Multi" }
-      ],
-      "accent": "#0284c7"
     }
   ],
   "education": [
     {
       "institution": "Atmiya University, Rajkot",
       "degree": "M.Sc. — Information Technology",
-      "duration": "2021 — 2023",
+      "duration": "2022 — 2024",
       "detail": "Advanced study in software systems, web technologies, and application architecture."
     },
     {
       "institution": "Atmiya University, Rajkot",
-      "degree": "B.Sc. — Information Technology",
-      "duration": "2018 — 2021",
+      "degree": "BCA — Bachelor of Computer Application",
+      "duration": "2019 — 2022",
       "detail": "Foundations in programming, databases, and computer science fundamentals."
     }
   ],
   "achievements": [
-    { "label": "Production Apps Shipped", "value": 5, "suffix": "+", "description": "Real products delivered to paying clients." },
-    { "label": "Industry Verticals", "value": 4, "suffix": "+", "description": "ERP/HRM, FinTech, healthcare & marketplace." },
-    { "label": "Years Building", "value": 2, "suffix": ".5+", "description": "Professional full-stack delivery." },
-    { "label": "Cross-Platform Apps", "value": 2, "suffix": "+", "description": "iOS & Android with live Firebase sync." }
+    { "label": "Manual Processing Cut", "value": 40, "suffix": "%", "description": "Form processing time reduced via Power Automate flows." },
+    { "label": "Data Entry Reduced", "value": 30, "suffix": "%", "description": "Manual data entry eliminated with Power Apps solutions." },
+    { "label": "Faster Feature Delivery", "value": 25, "suffix": "%", "description": "Dev time saved through a reusable React component library." },
+    { "label": "Years Building", "value": 1, "suffix": "+", "description": "Hands-on professional development experience." }
   ],
   "certifications": [
-    { "name": "Web Development Using React.js", "issuer": "Nityam Infotech", "year": "2022" },
-    { "name": "Google UX Design Foundation", "issuer": "Coursera", "year": "2021" }
+    { "name": "Google Ads for Beginners", "issuer": "Google", "year": "2024" },
+    { "name": "Canva Design Fundamentals", "issuer": "Canva", "year": "2024" },
+    { "name": "Canva App Development Certification", "issuer": "Canva", "year": "2024" }
   ],
   "philosophy": [
     {
-      "title": "Design the System First",
-      "description": "Before a line of UI, I model the data, the modules, and the access rules — so features scale independently instead of becoming tomorrow's tech debt."
+      "title": "Understand the Business First",
+      "description": "Great software starts with listening. I work with stakeholders to understand the real process before choosing the tool — whether that's React, Laravel, or a low-code Power App."
     },
     {
-      "title": "Own the Whole Lifecycle",
-      "description": "System design → API → frontend → VPS deployment → production monitoring. Shipping isn't done at merge; it's done when it's stable in front of real users."
+      "title": "Automate the Repetitive",
+      "description": "Every manual form, copy-paste, and repeated report is an opportunity. Automating it frees people for higher-value work — and removes errors at the source."
     },
     {
-      "title": "Performance & Correctness Are Features",
-      "description": "From query indexing and code splitting to fixing multi-currency rounding with zero data loss — speed and accuracy are requirements, not afterthoughts."
+      "title": "Let the Data Decide",
+      "description": "From cleaning raw datasets to building Power BI dashboards, I believe decisions should be driven by clear, trustworthy, real-time data — not guesswork."
     },
     {
-      "title": "Build Reusable, Type-Safe Foundations",
-      "description": "Type-safe component libraries and clear documentation raise the whole team's velocity and make codebases a pleasure to onboard into."
+      "title": "Build Reusable Foundations",
+      "description": "Reusable React components and clean architecture cut feature development time and make every subsequent module faster to ship."
     }
   ],
   "techEcosystem": [
-    "React.js", "Next.js", "TypeScript", "Tailwind CSS", "Redux", "Node.js",
-    "Express.js", "MongoDB", "PostgreSQL", "Firebase", "React Native", "Expo",
-    "Nginx", "Git", "Postman", "Figma"
+    "React.js", "JavaScript (ES6+)", "Bootstrap 5", "HTML5", "CSS3", "PHP",
+    "Laravel", "REST APIs", "Power Apps", "Power Automate", "Power BI",
+    "Dataverse", "SharePoint", "MySQL", "SQL", "Excel", "Git", "Canva"
   ],
   "socials": [
-    { "label": "GitHub", "platform": "github", "url": "https://github.com/GunjanUkani" },
-    { "label": "LinkedIn", "platform": "linkedin", "url": "https://www.linkedin.com/in/gunjan-ukani/" },
-    { "label": "Instagram", "platform": "instagram", "url": "https://www.instagram.com/ll_gunjan_ukani_ll/" },
-    { "label": "Facebook", "platform": "facebook", "url": "https://www.facebook.com/gunjan.ukani.7798" },
-    { "label": "Email", "platform": "email", "url": "mailto:gunjanukani456@gmail.com" }
+    { "label": "GitHub", "platform": "github", "url": "https://github.com/" },
+    { "label": "LinkedIn", "platform": "linkedin", "url": "https://www.linkedin.com/" },
+    { "label": "Email", "platform": "email", "url": "mailto:chhatroladipen@gmail.com" }
   ]
 }
