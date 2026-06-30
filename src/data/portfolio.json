@@ -117,6 +117,101 @@
   ],
   "projects": [
     {
+      "name": "Jadeja Interior Studio",
+      "category": "Interior Design · Business Website",
+      "year": "2025",
+      "image": "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=1200&q=80&auto=format&fit=crop",
+      "problem": "An interior design firm needed a professional online presence that captured the soul of their craft and converted visitors into enquiries.",
+      "challenge": "Translate the studio's aesthetic identity into a pixel-perfect, fully responsive website that felt as considered as their physical spaces.",
+      "solution": "A showcase website for Jadeja Interior Studio Pvt Ltd with a clean, elegant layout highlighting their portfolio, services, and brand story.",
+      "implementation": "Built with React.js, Bootstrap 5, and CSS3 — with smooth scroll interactions, responsive imagery grids, and a structured enquiry flow.",
+      "results": "A live production website giving the studio a credible digital footprint that matches the quality of their physical design work.",
+      "stack": ["React.js", "JavaScript (ES6+)", "Bootstrap 5", "HTML5", "CSS3"],
+      "stats": [
+        { "label": "Type", "value": "Business Site" },
+        { "label": "Design", "value": "Responsive" },
+        { "label": "Status", "value": "Live" }
+      ],
+      "link": "https://jadeja-interior.ashtrixcode.com/",
+      "accent": "#b45309"
+    },
+    {
+      "name": "VerdéVella Interiors",
+      "category": "Luxury Interior Design · Website",
+      "year": "2025",
+      "image": "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=1200&q=80&auto=format&fit=crop",
+      "problem": "A luxury interior design brand needed a website that conveyed exclusivity and refinement to a high-end residential and commercial clientele.",
+      "challenge": "Create a premium digital experience that matched the brand's luxury positioning — with visual weight, refined typography, and zero clutter.",
+      "solution": "A high-end business website for VerdéVella Interiors with an editorial layout, rich imagery, and a curated service presentation.",
+      "implementation": "Developed using React.js and CSS3 with custom styling for luxurious feel — careful attention to whitespace, typography hierarchy, and imagery composition.",
+      "results": "A polished, live website that positions VerdéVella as a credible luxury brand in the competitive interior design market.",
+      "stack": ["React.js", "JavaScript (ES6+)", "CSS3", "HTML5", "Bootstrap 5"],
+      "stats": [
+        { "label": "Market", "value": "Luxury" },
+        { "label": "Design", "value": "Editorial" },
+        { "label": "Status", "value": "Live" }
+      ],
+      "link": "https://verdevella.ashtrixcode.com/",
+      "accent": "#15803d"
+    },
+    {
+      "name": "Bloom Studio",
+      "category": "Design Studio · Website",
+      "year": "2025",
+      "image": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=1200&q=80&auto=format&fit=crop",
+      "problem": "A design studio needed a website that communicated their creative philosophy — 'crafting spaces that speak' — to prospective clients.",
+      "challenge": "Build a site that felt expressive and design-forward without sacrificing performance or mobile usability.",
+      "solution": "A visually engaging studio website with a bold hero, service breakdowns, and a portfolio-style layout — all reflecting Bloom Studio's creative identity.",
+      "implementation": "Crafted with React.js, Bootstrap 5, and CSS3 with fluid animations, responsive layouts, and clean component architecture for easy future updates.",
+      "results": "A live, expressive website that authentically reflects the studio's aesthetic and drives client enquiries.",
+      "stack": ["React.js", "JavaScript (ES6+)", "Bootstrap 5", "HTML5", "CSS3"],
+      "stats": [
+        { "label": "Type", "value": "Studio Site" },
+        { "label": "UX", "value": "Animated" },
+        { "label": "Status", "value": "Live" }
+      ],
+      "link": "https://bloom-studio.ashtrixcode.com/",
+      "accent": "#db2777"
+    },
+    {
+      "name": "Aurora Agency",
+      "category": "Creative & Digital Agency · Website",
+      "year": "2025",
+      "image": "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=1200&q=80&auto=format&fit=crop",
+      "problem": "A creative agency needed a website that embodied their own expertise — merging strategy, art, and technology in a compelling digital experience.",
+      "challenge": "Build a site that could showcase diverse capabilities (branding, web design, motion, 3D, development) without fragmenting the brand identity.",
+      "solution": "A multi-service agency website for Aurora Agency with service tiers, case-study teasers, and a bold visual identity rooted in their tagline 'Crafting Experiences That Move the World'.",
+      "implementation": "Built with React.js and CSS3, structured around clear service sections, interactive elements, and a strong colour system that reflects the Aurora brand.",
+      "results": "A live agency website that positions Aurora as a premium creative partner and clearly communicates its full-service offering.",
+      "stack": ["React.js", "JavaScript (ES6+)", "CSS3", "HTML5", "Bootstrap 5"],
+      "stats": [
+        { "label": "Services", "value": "Multi" },
+        { "label": "Design", "value": "Bold & Branded" },
+        { "label": "Status", "value": "Live" }
+      ],
+      "link": "https://aurora-agency.ashtrixcode.com/",
+      "accent": "#7c3aed"
+    },
+    {
+      "name": "NovaTech",
+      "category": "IT Solutions · Corporate Website",
+      "year": "2025",
+      "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&q=80&auto=format&fit=crop",
+      "problem": "A Rajkot-based IT solutions company needed a corporate website that reflected their capabilities in software, cloud, AI, and cybersecurity.",
+      "challenge": "Present a broad service portfolio — spanning enterprise software, cloud infrastructure, AI, and security — in a way that was clear and trustworthy, not overwhelming.",
+      "solution": "A structured corporate website for NovaTech with service cards, industry verticals, value propositions, and a strong call-to-action architecture.",
+      "implementation": "Developed with React.js, Bootstrap 5, and CSS3 — with a professional colour palette, icon-based service blocks, and responsive layouts optimised for enterprise buyers.",
+      "results": "A live corporate website that establishes NovaTech's credibility as a leading IT solutions provider across finance, healthcare, manufacturing, and more.",
+      "stack": ["React.js", "JavaScript (ES6+)", "Bootstrap 5", "HTML5", "CSS3"],
+      "stats": [
+        { "label": "Industries", "value": "6+" },
+        { "label": "Services", "value": "4 Core" },
+        { "label": "Status", "value": "Live" }
+      ],
+      "link": "https://novatech.ashtrixcode.com/",
+      "accent": "#0891b2"
+    },
+    {
       "name": "Power Apps Business Process Automation Suite",
       "category": "Low-Code · Power Platform",
       "year": "2025",
@@ -132,7 +227,7 @@
         { "label": "Apps", "value": "Canvas + Model-Driven" },
         { "label": "Dashboards", "value": "Real-time" }
       ],
-      "accent": "#7c3aed"
+      "accent": "#9333ea"
     },
     {
       "name": "React.js Dynamic Web Application",
@@ -150,7 +245,7 @@
         { "label": "Architecture", "value": "Component-based" },
         { "label": "Layouts", "value": "Responsive" }
       ],
-      "accent": "#0891b2"
+      "accent": "#2563eb"
     },
     {
       "name": "Data Analytics & Visualization Dashboard",
@@ -168,7 +263,7 @@
         { "label": "Metrics", "value": "Real-time" },
         { "label": "Reporting", "value": "Self-serve" }
       ],
-      "accent": "#2563eb"
+      "accent": "#0284c7"
     }
   ],
   "education": [
@@ -220,8 +315,8 @@
     "Dataverse", "SharePoint", "MySQL", "SQL", "Excel", "Git", "Canva"
   ],
   "socials": [
-    { "label": "GitHub", "platform": "github", "url": "https://github.com/" },
-    { "label": "LinkedIn", "platform": "linkedin", "url": "https://www.linkedin.com/" },
+    { "label": "GitHub", "platform": "github", "url": "https://github.com/dipenchhatrola/" },
+    { "label": "LinkedIn", "platform": "linkedin", "url": "https://www.linkedin.com/in/dipenchhatrola/" },
     { "label": "Email", "platform": "email", "url": "mailto:chhatroladipen@gmail.com" }
   ]
 }

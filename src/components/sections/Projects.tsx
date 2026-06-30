@@ -164,7 +164,7 @@ function ProjectChapter({ project, index }: { project: Project; index: number })
 
 export function Projects() {
   return (
-    <Section id="projects">
+    <Section id="projects" className="isolate">
       <SectionHeading
         eyebrow="Selected Work"
         title="Projects as stories, not cards"
