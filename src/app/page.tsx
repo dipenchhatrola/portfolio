@@ -3,6 +3,7 @@ import { Preloader } from "@/components/layout/Preloader";
 import { ScrollProgress } from "@/components/layout/ScrollProgress";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
+import { BackToTop } from "@/components/layout/BackToTop";
 
 import { Hero } from "@/components/sections/Hero";
 import { Story } from "@/components/sections/Story";
@@ -33,6 +34,7 @@ export default function Home() {
       </main>
 
       <Footer />
+      <BackToTop />
     </SmoothScrollProvider>
   );
 }

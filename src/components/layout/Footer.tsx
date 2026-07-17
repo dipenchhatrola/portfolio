@@ -1,7 +1,4 @@
-"use client";
-
 import { portfolio } from "@/lib/portfolio";
-import { scrollToId } from "@/lib/scrollTo";
 
 export function Footer() {
   const { personal } = portfolio;
@@ -25,12 +22,6 @@ export function Footer() {
               {s.label}
             </a>
           ))}
-          <button
-            onClick={() => scrollToId("hero")}
-            className="transition-colors hover:text-violet"
-          >
-            Back to top ↑
-          </button>
         </div>
       </div>
     </footer>
