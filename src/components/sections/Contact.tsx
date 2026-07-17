@@ -131,7 +131,7 @@ export function Contact() {
                       <Icon className="h-5 w-5 text-violet" />
                       <span className="text-sm font-medium text-ink/90">{s.label}</span>
                     </span>
-                    <ArrowUpRight className="h-4 w-4 text-ink/30 transition-all group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:text-violet" />
+                    {/* <ArrowUpRight className="h-4 w-4 text-ink/30 transition-all group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:text-violet" /> */}
                   </GlassCard>
                 </a>
               );

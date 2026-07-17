@@ -118,8 +118,8 @@ export function Hero() {
             transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
             className="glass-strong absolute -right-4 bottom-8 rounded-2xl px-4 py-3 sm:-right-8"
           >
-            <p className="font-display text-xl font-bold text-gradient-violet">React + Power Platform</p>
-            <p className="text-xs text-slate-deep/80">Low-code &amp; frontend specialist</p>
+            <p className="font-display text-xl font-bold text-gradient-violet">Full Stack Developer</p>
+            <p className="text-xs text-slate-deep/80">Building scalable web applications</p>
           </motion.div>
         </motion.div>
       </div>
