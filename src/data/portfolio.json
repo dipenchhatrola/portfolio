@@ -4,7 +4,11 @@
     "firstName": "Dipen",
     "role": "Software Developer · React.js",
     "tagline": "I turn complex business requirements into intuitive, scalable solutions.",
-    "roles": ["Software Developer", "React.js Developer", "Data Analyst"],
+    "roles": [
+      "Software Developer",
+      "React.js Developer",
+      "Data Analyst"
+    ],
     "summary": "Results-driven Software Developer with 1+ year of hands-on experience building scalable web applications using React.js, Microsoft Power Platform (Power Apps, Power Automate, Power BI), and Laravel. I translate complex business requirements into intuitive low-code/no-code solutions that streamline operations and boost productivity, with a strong foundation in frontend development, UI/UX principles, and agile methodologies.",
     "location": "Rajkot, Gujarat, India",
     "email": "chhatroladipen@gmail.com",
@@ -12,31 +16,131 @@
     "availability": "Open to Software, Frontend, Power Platform & Data Analytics roles"
   },
   "skills": [
-    { "name": "React.js", "category": "Frontend", "level": 92 },
-    { "name": "JavaScript (ES6+)", "category": "Frontend", "level": 90 },
-    { "name": "HTML5", "category": "Frontend", "level": 92 },
-    { "name": "CSS3", "category": "Frontend", "level": 90 },
-    { "name": "Bootstrap 5", "category": "Frontend", "level": 88 },
-    { "name": "Responsive Web Design", "category": "Frontend", "level": 88 },
-    { "name": "UI/UX Principles", "category": "Frontend", "level": 80 },
-    { "name": "PHP", "category": "Backend", "level": 80 },
-    { "name": "Laravel", "category": "Backend", "level": 78 },
-    { "name": "RESTful APIs", "category": "Backend", "level": 84 },
-    { "name": "Power Apps", "category": "Cloud", "level": 90 },
-    { "name": "Power Automate", "category": "Cloud", "level": 88 },
-    { "name": "Power BI", "category": "Cloud", "level": 86 },
-    { "name": "SharePoint", "category": "Cloud", "level": 80 },
-    { "name": "Dataverse", "category": "Database", "level": 84 },
-    { "name": "MySQL", "category": "Database", "level": 82 },
-    { "name": "SQL", "category": "Database", "level": 80 },
-    { "name": "Data Analysis", "category": "Tools", "level": 85 },
-    { "name": "Data Visualization", "category": "Tools", "level": 85 },
-    { "name": "Excel", "category": "Tools", "level": 82 },
-    { "name": "ChatGPT & Gemini", "category": "Tools", "level": 80 },
-    { "name": "Canva", "category": "Tools", "level": 78 },
-    { "name": "Google Ads", "category": "Tools", "level": 70 },
-    { "name": "Git & GitHub", "category": "DevOps", "level": 85 },
-    { "name": "Agile Methodology", "category": "DevOps", "level": 78 }
+    {
+      "name": "React.js",
+      "category": "Frontend",
+      "level": 92
+    },
+    {
+      "name": "JavaScript (ES6+)",
+      "category": "Frontend",
+      "level": 90
+    },
+    {
+      "name": "HTML5",
+      "category": "Frontend",
+      "level": 92
+    },
+    {
+      "name": "CSS3",
+      "category": "Frontend",
+      "level": 90
+    },
+    {
+      "name": "Bootstrap 5",
+      "category": "Frontend",
+      "level": 88
+    },
+    {
+      "name": "Responsive Web Design",
+      "category": "Frontend",
+      "level": 88
+    },
+    {
+      "name": "UI/UX Principles",
+      "category": "Frontend",
+      "level": 80
+    },
+    {
+      "name": "PHP",
+      "category": "Backend",
+      "level": 80
+    },
+    {
+      "name": "Laravel",
+      "category": "Backend",
+      "level": 78
+    },
+    {
+      "name": "RESTful APIs",
+      "category": "Backend",
+      "level": 84
+    },
+    {
+      "name": "Power Apps",
+      "category": "Cloud",
+      "level": 90
+    },
+    {
+      "name": "Power Automate",
+      "category": "Cloud",
+      "level": 88
+    },
+    {
+      "name": "Power BI",
+      "category": "Cloud",
+      "level": 86
+    },
+    {
+      "name": "SharePoint",
+      "category": "Cloud",
+      "level": 80
+    },
+    {
+      "name": "Dataverse",
+      "category": "Database",
+      "level": 84
+    },
+    {
+      "name": "MySQL",
+      "category": "Database",
+      "level": 82
+    },
+    {
+      "name": "SQL",
+      "category": "Database",
+      "level": 80
+    },
+    {
+      "name": "Data Analysis",
+      "category": "Tools",
+      "level": 85
+    },
+    {
+      "name": "Data Visualization",
+      "category": "Tools",
+      "level": 85
+    },
+    {
+      "name": "Excel",
+      "category": "Tools",
+      "level": 82
+    },
+    {
+      "name": "ChatGPT & Gemini",
+      "category": "Tools",
+      "level": 80
+    },
+    {
+      "name": "Canva",
+      "category": "Tools",
+      "level": 78
+    },
+    {
+      "name": "Google Ads",
+      "category": "Tools",
+      "level": 70
+    },
+    {
+      "name": "Git & GitHub",
+      "category": "DevOps",
+      "level": 85
+    },
+    {
+      "name": "Agile Methodology",
+      "category": "DevOps",
+      "level": 78
+    }
   ],
   "story": [
     {
@@ -80,7 +184,13 @@
         "Built interactive Power BI dashboards surfacing real-time business intelligence for management teams.",
         "Leveraged SharePoint for document management and collaboration, improving information accessibility."
       ],
-      "stack": ["Power Apps", "Power Automate", "Power BI", "Dataverse", "SharePoint"]
+      "stack": [
+        "Power Apps",
+        "Power Automate",
+        "Power BI",
+        "Dataverse",
+        "SharePoint"
+      ]
     },
     {
       "company": "Ace Software Exports Limited",
@@ -96,7 +206,13 @@
         "Automated repetitive data processing tasks, freeing capacity for higher-value analytical work.",
         "Delivered on-time reporting aligned with business KPIs in collaboration with cross-functional teams."
       ],
-      "stack": ["Data Analysis", "Data Visualization", "Power BI", "Excel", "SQL"]
+      "stack": [
+        "Data Analysis",
+        "Data Visualization",
+        "Power BI",
+        "Excel",
+        "SQL"
+      ]
     },
     {
       "company": "Imbuesoft LLP",
@@ -112,7 +228,14 @@
         "Implemented pixel-perfect designs with Bootstrap 5 alongside UI/UX designers, ensuring cross-browser compatibility.",
         "Participated in code reviews and agile sprint ceremonies, contributing to continuous delivery."
       ],
-      "stack": ["React.js", "JavaScript (ES6+)", "Bootstrap 5", "REST APIs", "HTML5", "CSS3"]
+      "stack": [
+        "React.js",
+        "JavaScript (ES6+)",
+        "Bootstrap 5",
+        "REST APIs",
+        "HTML5",
+        "CSS3"
+      ]
     }
   ],
   "projects": [
@@ -126,11 +249,26 @@
       "solution": "A showcase website for Jadeja Interior Studio Pvt Ltd with a clean, elegant layout highlighting their portfolio, services, and brand story.",
       "implementation": "Built with React.js, Bootstrap 5, and CSS3 — with smooth scroll interactions, responsive imagery grids, and a structured enquiry flow.",
       "results": "A live production website giving the studio a credible digital footprint that matches the quality of their physical design work.",
-      "stack": ["React.js", "JavaScript (ES6+)", "Bootstrap 5", "HTML5", "CSS3"],
+      "stack": [
+        "React.js",
+        "JavaScript (ES6+)",
+        "Bootstrap 5",
+        "HTML5",
+        "CSS3"
+      ],
       "stats": [
-        { "label": "Type", "value": "Business Site" },
-        { "label": "Design", "value": "Responsive" },
-        { "label": "Status", "value": "Live" }
+        {
+          "label": "Type",
+          "value": "Business Site"
+        },
+        {
+          "label": "Design",
+          "value": "Responsive"
+        },
+        {
+          "label": "Status",
+          "value": "Live"
+        }
       ],
       "link": "https://jadeja-interior.ashtrixcode.com/",
       "accent": "#b45309"
@@ -145,11 +283,26 @@
       "solution": "A high-end business website for VerdéVella Interiors with an editorial layout, rich imagery, and a curated service presentation.",
       "implementation": "Developed using React.js and CSS3 with custom styling for luxurious feel — careful attention to whitespace, typography hierarchy, and imagery composition.",
       "results": "A polished, live website that positions VerdéVella as a credible luxury brand in the competitive interior design market.",
-      "stack": ["React.js", "JavaScript (ES6+)", "CSS3", "HTML5", "Bootstrap 5"],
+      "stack": [
+        "React.js",
+        "JavaScript (ES6+)",
+        "CSS3",
+        "HTML5",
+        "Bootstrap 5"
+      ],
       "stats": [
-        { "label": "Market", "value": "Luxury" },
-        { "label": "Design", "value": "Editorial" },
-        { "label": "Status", "value": "Live" }
+        {
+          "label": "Market",
+          "value": "Luxury"
+        },
+        {
+          "label": "Design",
+          "value": "Editorial"
+        },
+        {
+          "label": "Status",
+          "value": "Live"
+        }
       ],
       "link": "https://verdevella.ashtrixcode.com/",
       "accent": "#15803d"
@@ -164,11 +317,26 @@
       "solution": "A visually engaging studio website with a bold hero, service breakdowns, and a portfolio-style layout — all reflecting Bloom Studio's creative identity.",
       "implementation": "Crafted with React.js, Bootstrap 5, and CSS3 with fluid animations, responsive layouts, and clean component architecture for easy future updates.",
       "results": "A live, expressive website that authentically reflects the studio's aesthetic and drives client enquiries.",
-      "stack": ["React.js", "JavaScript (ES6+)", "Bootstrap 5", "HTML5", "CSS3"],
+      "stack": [
+        "React.js",
+        "JavaScript (ES6+)",
+        "Bootstrap 5",
+        "HTML5",
+        "CSS3"
+      ],
       "stats": [
-        { "label": "Type", "value": "Studio Site" },
-        { "label": "UX", "value": "Animated" },
-        { "label": "Status", "value": "Live" }
+        {
+          "label": "Type",
+          "value": "Studio Site"
+        },
+        {
+          "label": "UX",
+          "value": "Animated"
+        },
+        {
+          "label": "Status",
+          "value": "Live"
+        }
       ],
       "link": "https://bloom-studio.ashtrixcode.com/",
       "accent": "#db2777"
@@ -183,11 +351,26 @@
       "solution": "A multi-service agency website for Aurora Agency with service tiers, case-study teasers, and a bold visual identity rooted in their tagline 'Crafting Experiences That Move the World'.",
       "implementation": "Built with React.js and CSS3, structured around clear service sections, interactive elements, and a strong colour system that reflects the Aurora brand.",
       "results": "A live agency website that positions Aurora as a premium creative partner and clearly communicates its full-service offering.",
-      "stack": ["React.js", "JavaScript (ES6+)", "CSS3", "HTML5", "Bootstrap 5"],
+      "stack": [
+        "React.js",
+        "JavaScript (ES6+)",
+        "CSS3",
+        "HTML5",
+        "Bootstrap 5"
+      ],
       "stats": [
-        { "label": "Services", "value": "Multi" },
-        { "label": "Design", "value": "Bold & Branded" },
-        { "label": "Status", "value": "Live" }
+        {
+          "label": "Services",
+          "value": "Multi"
+        },
+        {
+          "label": "Design",
+          "value": "Bold & Branded"
+        },
+        {
+          "label": "Status",
+          "value": "Live"
+        }
       ],
       "link": "https://aurora-agency.ashtrixcode.com/",
       "accent": "#7c3aed"
@@ -202,11 +385,26 @@
       "solution": "A structured corporate website for NovaTech with service cards, industry verticals, value propositions, and a strong call-to-action architecture.",
       "implementation": "Developed with React.js, Bootstrap 5, and CSS3 — with a professional colour palette, icon-based service blocks, and responsive layouts optimised for enterprise buyers.",
       "results": "A live corporate website that establishes NovaTech's credibility as a leading IT solutions provider across finance, healthcare, manufacturing, and more.",
-      "stack": ["React.js", "JavaScript (ES6+)", "Bootstrap 5", "HTML5", "CSS3"],
+      "stack": [
+        "React.js",
+        "JavaScript (ES6+)",
+        "Bootstrap 5",
+        "HTML5",
+        "CSS3"
+      ],
       "stats": [
-        { "label": "Industries", "value": "6+" },
-        { "label": "Services", "value": "4 Core" },
-        { "label": "Status", "value": "Live" }
+        {
+          "label": "Industries",
+          "value": "6+"
+        },
+        {
+          "label": "Services",
+          "value": "4 Core"
+        },
+        {
+          "label": "Status",
+          "value": "Live"
+        }
       ],
       "link": "https://novatech.ashtrixcode.com/",
       "accent": "#0891b2"
@@ -221,11 +419,26 @@
       "solution": "A modern quotation platform that helps users generate, review, and share medical service estimates with a clean interface and structured workflow.",
       "implementation": "Built as a responsive web application with a user-friendly dashboard, reusable form flow, and streamlined quotation logic tailored for healthcare service sales.",
       "results": "Delivered a live production-ready quotation experience that simplifies the sales process and improves clarity for clients and teams.",
-      "stack": ["React.js", "Next.js", "TypeScript", "Tailwind CSS", "Responsive UI"],
+      "stack": [
+        "React.js",
+        "Next.js",
+        "TypeScript",
+        "Tailwind CSS",
+        "Responsive UI"
+      ],
       "stats": [
-        { "label": "Type", "value": "SaaS" },
-        { "label": "Workflow", "value": "Fast" },
-        { "label": "Status", "value": "Live" }
+        {
+          "label": "Type",
+          "value": "SaaS"
+        },
+        {
+          "label": "Workflow",
+          "value": "Fast"
+        },
+        {
+          "label": "Status",
+          "value": "Live"
+        }
       ],
       "link": "https://estimo-quotation.vercel.app/",
       "accent": "#0f766e"
@@ -240,68 +453,29 @@
       "solution": "A medical dashboard and workflow platform designed to centralize service information and improve clarity across daily operations.",
       "implementation": "Developed as a modern responsive application with clean data presentation, structured sections, and a focus on usability for healthcare-related workflows.",
       "results": "Provided a polished live experience that improves operational clarity and supports more efficient day-to-day medical service management.",
-      "stack": ["React.js", "Next.js", "TypeScript", "Tailwind CSS", "Healthcare UX"],
+      "stack": [
+        "React.js",
+        "Next.js",
+        "TypeScript",
+        "Tailwind CSS",
+        "Healthcare UX"
+      ],
       "stats": [
-        { "label": "Focus", "value": "Medical" },
-        { "label": "UX", "value": "Clear" },
-        { "label": "Status", "value": "Live" }
+        {
+          "label": "Focus",
+          "value": "Medical"
+        },
+        {
+          "label": "UX",
+          "value": "Clear"
+        },
+        {
+          "label": "Status",
+          "value": "Live"
+        }
       ],
       "link": "https://mediflow-ashen.vercel.app/",
       "accent": "#2563eb"
-    },
-    {
-      "name": "Power Apps Business Process Automation Suite",
-      "category": "Low-Code · Power Platform",
-      "year": "2025",
-      "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&q=80&auto=format&fit=crop",
-      "problem": "Approval workflows, inventory tracking, and employee onboarding ran on manual forms and scattered spreadsheets.",
-      "challenge": "Automate end-to-end business processes with low-code tooling while keeping data consistent and reporting real-time.",
-      "solution": "A suite of Canvas and Model-Driven Power Apps automating approvals, inventory, and onboarding, with Power Automate flows triggered on form submissions.",
-      "implementation": "Built on Power Apps with Dataverse as the data layer, Power Automate for workflow automation, SharePoint for document management, and Power BI for consolidated KPI dashboards.",
-      "results": "Reduced manual form processing time by approximately 40% and delivered a single real-time management reporting view across multiple data sources.",
-      "stack": ["Power Apps", "Power Automate", "Dataverse", "Power BI", "SharePoint"],
-      "stats": [
-        { "label": "Processing time", "value": "-40%" },
-        { "label": "Apps", "value": "Canvas + Model-Driven" },
-        { "label": "Dashboards", "value": "Real-time" }
-      ],
-      "accent": "#9333ea"
-    },
-    {
-      "name": "React.js Dynamic Web Application",
-      "category": "Frontend · SPA",
-      "year": "2024",
-      "image": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=1200&q=80&auto=format&fit=crop",
-      "problem": "The product needed a fast, modular frontend that rendered live data and worked consistently across every device and browser.",
-      "challenge": "Architect a component-based SPA that stayed maintainable while feature modules kept growing.",
-      "solution": "A modular React.js single-page application with dynamic data rendering via REST API integration and fully responsive layouts.",
-      "implementation": "Built with React.js, JavaScript (ES6+), and Bootstrap 5, structured around a reusable component library with clean separation of concerns.",
-      "results": "Improved page load performance, achieved consistent UX across screen sizes, and reduced feature development time for subsequent modules by an estimated 25%.",
-      "stack": ["React.js", "JavaScript (ES6+)", "Bootstrap 5", "REST APIs", "HTML5", "CSS3"],
-      "stats": [
-        { "label": "Dev time saved", "value": "25%" },
-        { "label": "Architecture", "value": "Component-based" },
-        { "label": "Layouts", "value": "Responsive" }
-      ],
-      "accent": "#2563eb"
-    },
-    {
-      "name": "Data Analytics & Visualization Dashboard",
-      "category": "Data · Business Intelligence",
-      "year": "2024",
-      "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&q=80&auto=format&fit=crop",
-      "problem": "Stakeholders couldn't monitor business metrics without waiting on manual, error-prone reporting cycles.",
-      "challenge": "Build an end-to-end pipeline from raw data ingestion to polished dashboards that non-technical users could read at a glance.",
-      "solution": "An analytics pipeline covering data ingestion, cleaning, analysis, and final visualization dashboards for business reporting.",
-      "implementation": "Combined SQL and Excel for data preparation with Power BI for interactive dashboards monitoring real-time metrics and trends.",
-      "results": "Enabled stakeholders to track metrics in real time, supporting faster and more informed decision-making.",
-      "stack": ["Power BI", "SQL", "Excel", "Data Analysis", "Data Visualization"],
-      "stats": [
-        { "label": "Pipeline", "value": "End-to-end" },
-        { "label": "Metrics", "value": "Real-time" },
-        { "label": "Reporting", "value": "Self-serve" }
-      ],
-      "accent": "#0284c7"
     }
   ],
   "education": [
@@ -319,15 +493,47 @@
     }
   ],
   "achievements": [
-    { "label": "Manual Processing Cut", "value": 40, "suffix": "%", "description": "Form processing time reduced via Power Automate flows." },
-    { "label": "Data Entry Reduced", "value": 30, "suffix": "%", "description": "Manual data entry eliminated with Power Apps solutions." },
-    { "label": "Faster Feature Delivery", "value": 25, "suffix": "%", "description": "Dev time saved through a reusable React component library." },
-    { "label": "Years Building", "value": 1, "suffix": "+", "description": "Hands-on professional development experience." }
+    {
+      "label": "Manual Processing Cut",
+      "value": 40,
+      "suffix": "%",
+      "description": "Form processing time reduced via Power Automate flows."
+    },
+    {
+      "label": "Data Entry Reduced",
+      "value": 30,
+      "suffix": "%",
+      "description": "Manual data entry eliminated with Power Apps solutions."
+    },
+    {
+      "label": "Faster Feature Delivery",
+      "value": 25,
+      "suffix": "%",
+      "description": "Dev time saved through a reusable React component library."
+    },
+    {
+      "label": "Years Building",
+      "value": 1,
+      "suffix": "+",
+      "description": "Hands-on professional development experience."
+    }
   ],
   "certifications": [
-    { "name": "Google Ads for Beginners", "issuer": "Google", "year": "2024" },
-    { "name": "Canva Design Fundamentals", "issuer": "Canva", "year": "2024" },
-    { "name": "Canva App Development Certification", "issuer": "Canva", "year": "2024" }
+    {
+      "name": "Google Ads for Beginners",
+      "issuer": "Google",
+      "year": "2024"
+    },
+    {
+      "name": "Canva Design Fundamentals",
+      "issuer": "Canva",
+      "year": "2024"
+    },
+    {
+      "name": "Canva App Development Certification",
+      "issuer": "Canva",
+      "year": "2024"
+    }
   ],
   "philosophy": [
     {
@@ -348,13 +554,40 @@
     }
   ],
   "techEcosystem": [
-    "React.js", "JavaScript (ES6+)", "Bootstrap 5", "HTML5", "CSS3", "PHP",
-    "Laravel", "REST APIs", "Power Apps", "Power Automate", "Power BI",
-    "Dataverse", "SharePoint", "MySQL", "SQL", "Excel", "Git", "Canva"
+    "React.js",
+    "JavaScript (ES6+)",
+    "Bootstrap 5",
+    "HTML5",
+    "CSS3",
+    "PHP",
+    "Laravel",
+    "REST APIs",
+    "Power Apps",
+    "Power Automate",
+    "Power BI",
+    "Dataverse",
+    "SharePoint",
+    "MySQL",
+    "SQL",
+    "Excel",
+    "Git",
+    "Canva"
   ],
   "socials": [
-    { "label": "GitHub", "platform": "github", "url": "https://github.com/dipenchhatrola/" },
-    { "label": "LinkedIn", "platform": "linkedin", "url": "https://www.linkedin.com/in/dipenchhatrola/" },
-    { "label": "Email", "platform": "email", "url": "mailto:chhatroladipen@gmail.com" }
+    {
+      "label": "GitHub",
+      "platform": "github",
+      "url": "https://github.com/dipenchhatrola/"
+    },
+    {
+      "label": "LinkedIn",
+      "platform": "linkedin",
+      "url": "https://www.linkedin.com/in/dipenchhatrola/"
+    },
+    {
+      "label": "Email",
+      "platform": "email",
+      "url": "mailto:chhatroladipen@gmail.com"
+    }
   ]
 }
