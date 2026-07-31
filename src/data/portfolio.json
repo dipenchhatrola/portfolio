@@ -211,61 +211,6 @@
       "link": "https://novatech.ashtrixcode.com/",
       "accent": "#0891b2"
     },
-    {
-      "name": "Power Apps Business Process Automation Suite",
-      "category": "Low-Code · Power Platform",
-      "year": "2025",
-      "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&q=80&auto=format&fit=crop",
-      "problem": "Approval workflows, inventory tracking, and employee onboarding ran on manual forms and scattered spreadsheets.",
-      "challenge": "Automate end-to-end business processes with low-code tooling while keeping data consistent and reporting real-time.",
-      "solution": "A suite of Canvas and Model-Driven Power Apps automating approvals, inventory, and onboarding, with Power Automate flows triggered on form submissions.",
-      "implementation": "Built on Power Apps with Dataverse as the data layer, Power Automate for workflow automation, SharePoint for document management, and Power BI for consolidated KPI dashboards.",
-      "results": "Reduced manual form processing time by approximately 40% and delivered a single real-time management reporting view across multiple data sources.",
-      "stack": ["Power Apps", "Power Automate", "Dataverse", "Power BI", "SharePoint"],
-      "stats": [
-        { "label": "Processing time", "value": "-40%" },
-        { "label": "Apps", "value": "Canvas + Model-Driven" },
-        { "label": "Dashboards", "value": "Real-time" }
-      ],
-      "accent": "#9333ea"
-    },
-    {
-      "name": "React.js Dynamic Web Application",
-      "category": "Frontend · SPA",
-      "year": "2024",
-      "image": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=1200&q=80&auto=format&fit=crop",
-      "problem": "The product needed a fast, modular frontend that rendered live data and worked consistently across every device and browser.",
-      "challenge": "Architect a component-based SPA that stayed maintainable while feature modules kept growing.",
-      "solution": "A modular React.js single-page application with dynamic data rendering via REST API integration and fully responsive layouts.",
-      "implementation": "Built with React.js, JavaScript (ES6+), and Bootstrap 5, structured around a reusable component library with clean separation of concerns.",
-      "results": "Improved page load performance, achieved consistent UX across screen sizes, and reduced feature development time for subsequent modules by an estimated 25%.",
-      "stack": ["React.js", "JavaScript (ES6+)", "Bootstrap 5", "REST APIs", "HTML5", "CSS3"],
-      "stats": [
-        { "label": "Dev time saved", "value": "25%" },
-        { "label": "Architecture", "value": "Component-based" },
-        { "label": "Layouts", "value": "Responsive" }
-      ],
-      "accent": "#2563eb"
-    },
-    {
-      "name": "Data Analytics & Visualization Dashboard",
-      "category": "Data · Business Intelligence",
-      "year": "2024",
-      "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&q=80&auto=format&fit=crop",
-      "problem": "Stakeholders couldn't monitor business metrics without waiting on manual, error-prone reporting cycles.",
-      "challenge": "Build an end-to-end pipeline from raw data ingestion to polished dashboards that non-technical users could read at a glance.",
-      "solution": "An analytics pipeline covering data ingestion, cleaning, analysis, and final visualization dashboards for business reporting.",
-      "implementation": "Combined SQL and Excel for data preparation with Power BI for interactive dashboards monitoring real-time metrics and trends.",
-      "results": "Enabled stakeholders to track metrics in real time, supporting faster and more informed decision-making.",
-      "stack": ["Power BI", "SQL", "Excel", "Data Analysis", "Data Visualization"],
-      "stats": [
-        { "label": "Pipeline", "value": "End-to-end" },
-        { "label": "Metrics", "value": "Real-time" },
-        { "label": "Reporting", "value": "Self-serve" }
-      ],
-      "accent": "#0284c7"
-    }
-  ],
   "education": [
     {
       "institution": "Atmiya University, Rajkot",
