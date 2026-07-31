@@ -41,7 +41,7 @@ export function Experience() {
   }, [isMobile]);
 
   return (
-    <section id="experience" ref={sectionRef} className="relative z-10 overflow-hidden">
+    <section id="experience" ref={sectionRef} className="relative z-10 overflow-hidden bg-background">
       {/* Mobile: simple vertical layout */}
       {isMobile ? (
         <div className="px-6 py-24">

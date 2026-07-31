@@ -47,32 +47,32 @@ function ProjectChapter({ project, index }: { project: Project; index: number })
               className="object-cover transition-transform duration-700 group-hover:scale-105"
             />
           )}
+        </motion.div>
+      </div>
 
-          {/* readability scrim */}
-          <div
-            aria-hidden
-            className="pointer-events-none absolute inset-0 bg-gradient-to-t from-ink/80 via-ink/10 to-ink/30"
-          />
-
-          {/* title + meta */}
-          <div className="pointer-events-none absolute inset-x-6 top-6 flex flex-col gap-1.5">
-            <span className="font-mono text-[10px] uppercase tracking-[0.25em] text-white/90 sm:text-xs">
+      {/* Narrative */}
+      <motion.div style={{ y }} className="flex flex-col gap-7 py-6">
+        <div className="flex flex-col gap-2">
+          <div className="flex items-center justify-between gap-4">
+            <span className="font-mono text-xs uppercase tracking-[0.2em] text-slate-deep/70">
               {project.category} · {project.year}
             </span>
-            <span className="font-display text-2xl font-bold text-white drop-shadow sm:text-4xl">
-              {project.name}
+            <span className="font-mono text-4xl font-bold text-ink/15">
+              0{index + 1}
             </span>
           </div>
+          <h3 className="font-display text-3xl font-bold text-ink sm:text-4xl">
+            {project.name}
+          </h3>
+        </div>
 
-          {/* stats overlay */}
-          <div className="pointer-events-none absolute inset-x-5 bottom-5 grid grid-cols-3 gap-2">
+        {/* Stats overlay relocated to right side */}
+        {project.stats && project.stats.length > 0 && (
+          <div className="grid grid-cols-3 gap-3 rounded-2xl border border-ink/10 bg-white/70 p-4 shadow-sm backdrop-blur">
             {project.stats.map((stat) => (
-              <div
-                key={stat.label}
-                className="rounded-xl bg-white/90 px-3 py-2.5 text-center backdrop-blur"
-              >
+              <div key={stat.label} className="text-center">
                 <div
-                  className="font-display text-lg font-bold"
+                  className="font-display text-xl font-bold sm:text-2xl"
                   style={{ color: project.accent }}
                 >
                   {stat.value}
@@ -83,20 +83,7 @@ function ProjectChapter({ project, index }: { project: Project; index: number })
               </div>
             ))}
           </div>
-        </motion.div>
-      </div>
-
-      {/* Narrative */}
-      <motion.div style={{ y }} className="flex flex-col gap-7 py-6">
-        <div className="flex items-center gap-3">
-          <span className="font-mono text-5xl font-bold text-ink/10">
-            0{index + 1}
-          </span>
-          <div>
-            <h3 className="font-display text-3xl font-bold text-ink">{project.name}</h3>
-            <p className="text-sm text-slate-deep/70">{project.category}</p>
-          </div>
-        </div>
+        )}
 
         <motion.ol
           variants={staggerContainer(0.1)}
